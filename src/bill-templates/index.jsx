@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-expressions */
 import React, { useRef, useState, useEffect } from 'react';
 import { Affix, Button, Switch, Input, message, Icon } from 'antd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -7,9 +9,9 @@ import { largePageWidth, mdPageWidth, smPageWidth } from './common/constant';
 import { getDishList, getShowKeys, hasComponentInList, checkProps } from './common/utils';
 import Block from './components/block';
 import './style.less';
-import IconDel from 'assets/svgs/delete_bill.svg';
-import mockComponentsData from '../../../mock/components.json';
-// import mockComponentsData from '../../../mock/bill/invalid.json';
+import IconDel from '../assets/svgs/delete_bill.svg';
+import mockComponentsData from '../mock/components.json';
+// import mockComponentsData from '../../mock/bill/invalid.json';
 
 import { uploadImg, delImg, uploadCode } from './service';
 // TODO: 左侧默认选中组件没有对列表组件判断
@@ -53,6 +55,7 @@ export default function BillTemplates({
       case 'align':
         setAlignActive(newNumber);
         break;
+      default:
     }
     const tempMainData = deepClone(mainData);
     const { blockIndex, rowIndex } = activeBlock;
@@ -377,12 +380,19 @@ export default function BillTemplates({
         const base64 = event.target.result;
         let tempObj = {};
         // setImgUrl(base64);
-        if (type == 4) {
+        const tempMainData = deepClone(mainData);
+        const tempRows = tempMainData[activeBlock.blockIndex] && tempMainData[activeBlock.blockIndex].rows ? tempMainData[block.blockIndex].rows : null;
+        let customText = '';
+        let paramTemp = '';
+        const renderDatasTemp = deepClone(renderDatas);
+        renderDatasTemp.objectList.forEach((el) => {
+          if (el.placeholder === paramTemp) {
+            customText = el.customText;
+          }
+        });
+        if (tempRows.cells[0].type == 4) {
           let placeholder = '';
-          let customText = '';
-          let paramTemp = '';
           const { blockIndex, rowIndex } = activeBlock;
-          const renderDatasTemp = deepClone(renderDatas);
           if (tempMainData[blockIndex].rows[rowIndex].cells && tempMainData[blockIndex].rows[rowIndex].cells.length) {
             tempMainData[blockIndex].rows[rowIndex].cells.forEach((el) => {
               if ((el.type == 2 || el.type == 3 || el.type == 4) && el.data === originData) {
@@ -391,11 +401,6 @@ export default function BillTemplates({
               }
             });
           }
-          renderDatasTemp.objectList.forEach((el) => {
-            if (el.placeholder === paramTemp) {
-              customText = el.customText;
-            }
-          });
           const params = {
             code: base64,
             placeholder,
@@ -796,7 +801,7 @@ export default function BillTemplates({
         }
         mainDataTemp.push(temp);
         componentActiveTemp.push(item.id);
-      } else if(activeBlock.connection === componentProperty.connection) { // 非普通表格判断是否属于当前表格
+      } else if (activeBlock.connection === componentProperty.connection) { // 非普通表格判断是否属于当前表格
         let tempShowKeys = [];
         if (showkeys.includes(componentProperty.cellAlias)) { // 属性存在就删除
           tempShowKeys = showkeys.filter(i => i !== componentProperty.cellAlias);

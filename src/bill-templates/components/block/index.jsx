@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
-import IconRowDrag from 'assets/svgs/row_drag.svg';
+import IconRowDrag from '../../../assets/svgs/row_drag.svg';
 import Row from '../row';
 import ListRow from '../lsit-row';
 import { ItemType } from '../../common/constant';

@@ -1,5 +1,6 @@
-import { union } from 'lodash';
-import { deepClone } from 'shared/utils/utils';
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-expressions */
+import { union, deepClone } from 'lodash';
 
 /**
  * 字体转换 1*1:12px  2*2:24px
@@ -21,6 +22,8 @@ export function formatCellStyle({
     case 3:
       style.align = 'right';
       break;
+    default:
+      style.align = 'left';
   }
   switch (fontWeight) {
     case 1:
@@ -29,6 +32,8 @@ export function formatCellStyle({
     case 2:
       style.fontWeight = 'bold';
       break;
+    default:
+      style.fontWeight = 'normal';
   }
   switch (fontSize) {
     case 1:
@@ -37,6 +42,8 @@ export function formatCellStyle({
     case 4:
       style.fontSize = '24px';
       break;
+    default:
+      style.fontSize = '12px';
   }
   return style;
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { deepClone } from 'shared/utils/utils.js';
+import { deepClone } from 'lodash';
 import { getPlaceholderValue } from '../../common/utils';
 import Cell from '../cell';
 import * as CellComponents from '../index';
@@ -184,7 +184,7 @@ export default function Row({
   // 列表内双击选中row
   const handleDobuleClick = () => {
     console.log('双击了')
-    onDoubleClick && onDoubleClick();
+    // onDoubleClick && onDoubleClick();
   }
 
   return (

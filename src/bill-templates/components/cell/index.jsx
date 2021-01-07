@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { ResizableBox } from 'react-resizable';
 import { useDrag, useDrop } from 'react-dnd';
 import { ItemType } from '../../common/constant';
-import IconCellDrag from 'assets/svgs/cell_drag.svg';
+import IconCellDrag from '../../../assets/svgs/cell_drag.svg';
 import 'react-resizable/css/styles.css';
 import './style.less';
 

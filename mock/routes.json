@@ -1,8 +1,0 @@
-{
-  "/mind/bui/authority/getCommercial": "/getCommercial",
-  "/mind/bui/report/dishSaleReport/getDishBrandType": "/getDishBrandType",
-  "/mind/bui/report/thirdPartyPeconciliation/thirdTakeOut": "/thirdPartyPeconciliation_thirdTakeOut",
-  "/api/": "/",
-  "/blog/:resource/:id/show": "/:resource/:id",
-  "/blog/:category": "/posts?category=:category"
-}

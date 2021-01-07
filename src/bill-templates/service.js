@@ -1,6 +1,11 @@
-import createAPI from 'shared/utils/createAPI';
+// import createAPI from 'shared/utils/createAPI';
 const url = '/print/printer/documentStyleTemplet';
 const url2 = '/print/print-template';
+const createAPI = {
+  post: () => { },
+  get: () => { },
+}
+
 // 上传自定义图片
 const uploadImg = param => createAPI.post(`${url2}/getUploadImgKey`, param, {
   headers: {
