@@ -1,0 +1,55 @@
+{
+  "actor":"222",
+  "goodsTotalAmount":"0",
+  "goodsTotalPrice":"0.00",
+  "middleCategories":[
+      {
+          "middleCategoryDishes":[
+              {
+                  "dishActualAmount":"10.00",
+                  "dishExtraList":[
+                      {
+                          "dishNameAndPriceAmount":"10.00",
+                          "dishNameAndPriceName":"加冰",
+                          "dishNameAndPricePrice":"10.00",
+                          "dishNameAndPriceQuantity":"1"
+                      }
+                  ],
+                  "dishLabelList":[
+                      "爆款"
+                  ],
+                  "dishName":"可乐",
+                  "dishOrderNum":1,
+                  "dishPracticeList":[
+                      {
+                          "dishNameAndPriceAmount":"10.00",
+                          "dishNameAndPriceName":"加辣",
+                          "dishNameAndPricePrice":"10.00",
+                          "dishNameAndPriceQuantity":"1"
+                      }
+                  ],
+                  "dishPrice":"10.00",
+                  "dishQuantity":"1",
+                  "dishTableCount":0,
+                  "dishTotalPrice":"10.00",
+                  "groupMeal":false
+              }
+          ],
+          "middleCategoryName":"饮料",
+          "middleCategoryTotalPrice":"10.00"
+      }
+  ],
+  "operationTime":"2020-12-15 12:22:00",
+  "passCodeInfo":"",
+  "peopleCount":"A001",
+  "printTime":"2020-12-24 13:53:44",
+  "serialNumber":"A001",
+  "shopName":"测试kpos",
+  "tableCreateTime":"2020-12-07 12:00:01",
+  "tableOrNumberPlateName":"取餐号",
+  "tableOrNumberPlatevalue":"A001",
+  "ticketName":"堂口单(档口单,单切单)",
+  "tradeOrderDevice":"POS",
+  "tradeOrderNumber":"121321331",
+  "tradeType":"堂食"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Oval 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="报表-第三方对账报表" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-983.000000, -327.000000)" id="Card-4备份-2">
+            <g transform="translate(959.000000, 307.000000)">
+                <g id="Group-22-Copy" transform="translate(24.000000, 20.000000)">
+                    <circle id="Oval-2" fill="#FA6400" cx="12" cy="12" r="12"></circle>
+                    <g id="闪电" transform="translate(8.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M1.80545751,1.08297464 C1.97606318,0.456183868 2.65848582,0 3.28403661,0 L4.99009322,0 C5.61564772,0 5.89998967,0.456185106 5.67251586,1.02610649 L4.25079996,4.39000666 L6.69615231,4.39000666 C7.94726626,4.39000666 8.28847016,5.18863935 7.49231247,6.10101327 L2.14790263,12.3726211 C1.74982316,12.8288062 1.52234812,12.7719368 1.69295378,12.1451473 L2.83032527,7.41269426 L0.839927953,7.41269426 C0.21437345,7.41269426 -0.126837872,6.95650916 0.0437677893,6.32971963 L1.80546246,1.0829734 L1.80545751,1.08297464 Z" id="路径"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

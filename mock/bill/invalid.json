@@ -1,0 +1,1007 @@
+{
+  "id": "435866577799063552",
+  "name": "测试模板1",
+  "documentType": 101,
+  "baseTemplate": 100001,
+  "url": "这是一个URL",
+  "defaultTemplate": 0,
+  "enableFlag": 2,
+  "brandIdenty": 1234567,
+  "shopIdenty": 7654321,
+  "demoObject": {
+    "actor": "222",
+    "memo": "随便备注下",
+    "dishRefundReason": "想作废",
+    "dinnerType": "内用",
+    "tradeOrderDevice": "POS",
+    "refundCatagories": [
+      {
+        "middleCategoryDishes": [
+          {
+            "dishActualAmount": "10.00",
+            "dishExtraList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加冰",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1"
+              }
+            ],
+            "dishLabelList": [
+              "爆款"
+            ],
+            "dishName": "可乐",
+            "dishOrderNum": 1,
+            "dishPracticeList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加辣",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1"
+              }
+            ],
+            "dishPrice": "10.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "10.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "30.00",
+            "dishName": "雪碧",
+            "dishOrderNum": 2,
+            "dishPrice": "15.00",
+            "dishQuantity": "2",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishName": "宫保鸡丁",
+            "dishOrderNum": 3,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishName": "宫保鸡丁",
+            "dishOrderNum": 4,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishName": "宫保鸡丁",
+            "dishOrderNum": 5,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishName": "宫保鸡丁",
+            "dishOrderNum": 6,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishCategoryBeanList": [
+              {
+                "middleCategoryDishes": [
+                  {
+                    "dishActualAmount": "60.00",
+                    "dishName": "宫保鸡丁",
+                    "dishOrderNum": 0,
+                    "dishPrice": "30.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false
+                  },
+                  {
+                    "dishActualAmount": "60.00",
+                    "dishName": "宫保鸡丁",
+                    "dishOrderNum": 0,
+                    "dishPrice": "30.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishExtraList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加冰",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1"
+                      }
+                    ],
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPracticeList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加辣",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1"
+                      }
+                    ],
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false
+                  }
+                ],
+                "middleCategoryName": "热菜",
+                "middleCategoryTotalPrice": "120.00"
+              }
+            ],
+            "dishName": "肥牛套餐",
+            "dishOrderNum": 7,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "60.00",
+            "groupMeal": false
+          }
+        ],
+        "middleCategoryName": "饮料",
+        "middleCategoryTotalPrice": "220.00"
+      }
+    ],
+    "operationTime": "2020-12-15 12:22:00",
+    "peopleCount": "A001",
+    "printTime": "2020-12-24 13:53:44",
+    "serialNumber": "A001",
+    "shopName": "测试kpos",
+    "tableCreateTime": "2020-12-07 12:00:01",
+    "tableOrNumberPlateName": "取餐号",
+    "tableOrNumberPlatevalue": "A001",
+    "ticketName": "作废单",
+    "tradeOrderNumber": "121321331",
+    "currencySymbol": "￥",
+    "tradeType": "堂食"
+  },
+  "objectList": [
+    {
+      "id": "1",
+      "objectKey": "",
+      "objectValue": "https://p0.meituan.net/rmscashier/80866718a8c8321c72556ef19ac60b2582112.png",
+      "placeholder": "billPicture"
+    },
+    {
+      "placeholder": "billMsg",
+      "customText": "发票二维码文案"
+    },
+    {
+      "id": 2,
+      "placeholder": "customCodePicture"
+    },
+    {
+      "placeholder": "commentCodeMsg",
+      "customText": "自定义二维码文案"
+    },
+    {
+      "placeholder": "customPicture"
+    },
+    {
+      "placeholder": "customMsg",
+      "customText": "上传图片自定义文案"
+    }
+  ],
+  "modulesList": [
+    {
+      "id": 402,
+      "name": "module 402",
+      "describe": "这是一个module 402",
+      "sort": 1,
+      "componentList": [
+        {
+          "id": 2003,
+          "moduleId": 402,
+          "label": "这是一个Label3",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "orderNo",
+          "type": 1,
+          "componentProperty": {
+            "buttonLabel": "上传自定义二维码"
+          },
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": 2004,
+          "moduleId": 402,
+          "label": "这是一个Label4",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "这是一个place holder",
+          "type": "text",
+          "componentProperty": {
+            "buttonLabel": "logo",
+            "readOnly": false
+          },
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 20
+        },
+        {
+          "id": 2005,
+          "moduleId": 402,
+          "label": "这是一个Label4",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "这是一个place holder",
+          "type": "text",
+          "componentProperty": {
+            "buttonLabel": "上传自定义图片",
+            "readOnly": false
+          },
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 20
+        },
+        {
+          "id": 2006,
+          "moduleId": 402,
+          "label": "这是一个Label4",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "这是一个place holder",
+          "type": "text",
+          "componentProperty": {},
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 20
+        },
+        {
+          "id": 2007,
+          "moduleId": 402,
+          "label": "自定义图片",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": {
+            "align": 2,
+            "fontSize": 1,
+            "fontWeight": 1
+          },
+          "placeholder": "customPicture",
+          "type": 4,
+          "componentProperty": {
+            "buttonLabel": "上传自定义图片2",
+            "readOnly": false,
+            "param": "customMsg",
+            "rowType": 1,
+            "limit": 3
+          },
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 401,
+      "name": "module 401",
+      "describe": "这是一个module 401",
+      "sort": 2,
+      "componentList": [
+        {
+          "id": 2001,
+          "moduleId": 401,
+          "label": "这是一个Label1",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "这是一个place holder",
+          "type": "text",
+          "componentProperty": "这是一个component property",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 20
+        },
+        {
+          "id": 2002,
+          "moduleId": 401,
+          "label": "这是一个Label2",
+          "value": "这是一个value",
+          "labelStyle": "这是一个Label stype",
+          "valueStyle": "这是一个value style",
+          "placeholder": "这是一个place holder",
+          "type": "text",
+          "componentProperty": "这是一个component property",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 20
+        }
+      ]
+    }
+  ],
+  "baseTemplateContent": "测试模板1的内容",
+  "content": {
+    "rows": [
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "style": {
+          "spacing": 2
+        },
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "作废单",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 2,
+              "fontSize": 4,
+              "fontWeight": 1
+            }
+          }
+        ],
+        "connection": 1
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ],
+        "connection": 1
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "流水号:",
+            "data": "{serialNumber}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "{serialNumber}",
+            "style": {
+              "align": 1,
+              "fontSize": 4,
+              "fontWeight": 1
+            }
+          }
+        ],
+        "connection": 1
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "{tableOrNumberPlateName}:{tableOrNumberPlatevalue}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "{tableOrNumberPlatevalue}0",
+            "style": {
+              "align": 1,
+              "fontSize": 4,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "{dinnerType}-{tradeOrderDevice}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "人数:",
+            "data": "{peopleCount}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "订单号:",
+            "data": "{tradeOrderNumber}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "{tradeOrderNumber}0",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{refundCatagories}",
+        "visible": "",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 1,
+                "name": "",
+                "title": "",
+                "data": "{middleCategoryName}",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{middleCategoryDishes}",
+            "visible": "",
+            "childRows": [
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 1,
+                    "name": "",
+                    "title": "",
+                    "data": "{dishName}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 70,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 1,
+                    "name": "",
+                    "title": "",
+                    "data": "X{dishQuantity}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 30,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "type": 2,
+                "data": "{dishCategoryBeanList}",
+                "visible": "",
+                "childRows": [
+                  {
+                    "type": 2,
+                    "data": "{middleCategoryDishes}",
+                    "visible": "",
+                    "childRows": [
+                      {
+                        "type": 1,
+                        "data": "",
+                        "visible": "",
+                        "cells": [
+                          {
+                            "id": 1,
+                            "name": "",
+                            "title": "",
+                            "data": "  -{dishName}",
+                            "param": "",
+                            "type": 1,
+                            "percent": 70,
+                            "style": {
+                              "align": 1,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 1,
+                            "name": "",
+                            "title": "",
+                            "data": "X{dishQuantity}",
+                            "param": "",
+                            "type": 1,
+                            "percent": 30,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": 2,
+                        "data": "{dishExtraList}",
+                        "visible": "",
+                        "childRows": [
+                          {
+                            "type": 1,
+                            "data": "",
+                            "visible": "",
+                            "cells": [
+                              {
+                                "id": 1,
+                                "name": "",
+                                "title": "",
+                                "data": "  -加料:{dishNameAndPriceName}",
+                                "param": "",
+                                "type": 1,
+                                "percent": 70,
+                                "style": {
+                                  "align": 1,
+                                  "fontSize": 1,
+                                  "fontWeight": 1
+                                }
+                              },
+                              {
+                                "id": 1,
+                                "name": "",
+                                "title": "",
+                                "data": "X{dishNameAndPriceQuantity}",
+                                "param": "",
+                                "type": 1,
+                                "percent": 30,
+                                "style": {
+                                  "align": 3,
+                                  "fontSize": 1,
+                                  "fontWeight": 1
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": 2,
+                        "data": "{dishPracticeList}",
+                        "visible": "",
+                        "childRows": [
+                          {
+                            "type": 1,
+                            "data": "",
+                            "visible": "",
+                            "cells": [
+                              {
+                                "id": 1,
+                                "name": "",
+                                "title": "",
+                                "data": "  -做法:{dishNameAndPriceName}",
+                                "param": "",
+                                "type": 1,
+                                "percent": 70,
+                                "style": {
+                                  "align": 1,
+                                  "fontSize": 1,
+                                  "fontWeight": 1
+                                }
+                              },
+                              {
+                                "id": 1,
+                                "name": "",
+                                "title": "",
+                                "data": "X{dishNameAndPriceQuantity}",
+                                "param": "",
+                                "type": 1,
+                                "percent": 30,
+                                "style": {
+                                  "align": 3,
+                                  "fontSize": 1,
+                                  "fontWeight": 1
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": 2,
+                "data": "{dishExtraList}",
+                "visible": "",
+                "childRows": [
+                  {
+                    "type": 1,
+                    "data": "",
+                    "visible": "",
+                    "cells": [
+                      {
+                        "id": 1,
+                        "name": "",
+                        "title": "",
+                        "data": "  -加料:{dishNameAndPriceName}",
+                        "param": "",
+                        "type": 1,
+                        "percent": 70,
+                        "style": {
+                          "align": 1,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      },
+                      {
+                        "id": 1,
+                        "name": "",
+                        "title": "",
+                        "data": "X{dishNameAndPriceQuantity}",
+                        "param": "",
+                        "type": 1,
+                        "percent": 30,
+                        "style": {
+                          "align": 3,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": 2,
+                "data": "{dishPracticeList}",
+                "visible": "",
+                "childRows": [
+                  {
+                    "type": 1,
+                    "data": "",
+                    "visible": "",
+                    "cells": [
+                      {
+                        "id": 1,
+                        "name": "",
+                        "title": "",
+                        "data": "  -做法:{dishNameAndPriceName}",
+                        "param": "",
+                        "type": 1,
+                        "percent": 70,
+                        "style": {
+                          "align": 1,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      },
+                      {
+                        "id": 1,
+                        "name": "",
+                        "title": "",
+                        "data": "X{dishNameAndPriceQuantity}",
+                        "param": "",
+                        "type": 1,
+                        "percent": 30,
+                        "style": {
+                          "align": 3,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "{memo}0",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "整单备注:",
+            "data": "{memo}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "{memo}0",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "{memo}0",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "{dishRefundReason}0",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "作废原因:",
+            "data": "{dishRefundReason}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "{dishRefundReason}0",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "{dishRefundReason}",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "",
+            "data": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "操作员:",
+            "data": "{actor}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "下单时间:",
+            "data": "{tableCreateTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "style": {
+          "spacing": 2
+        },
+        "cells": [
+          {
+            "id": 1,
+            "name": "",
+            "title": "打印时间:",
+            "data": "{printTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "visible": "",
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

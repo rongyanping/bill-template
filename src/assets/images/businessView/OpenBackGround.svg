@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1136px" height="258px" viewBox="0 0 1136 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>暂位图</title>
+    <desc>Created with Sketch.</desc>
+    <g id="营业概况" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="门店顾客概况" transform="translate(-190.000000, -74.000000)">
+            <g id="编组" transform="translate(158.000000, 0.000000)">
+                <g id="暂位图" transform="translate(32.000000, 74.000000)">
+                    <polygon id="竖线备份" fill="#E9E9E9" points="624 171 625 171 625 247 624 247"></polygon>
+                    <polygon id="竖线备份-3" fill="#E9E9E9" points="895 171 896 171 896 247 895 247"></polygon>
+                    <path d="M432,129 L1136,129" id="路径-5" stroke="#EDEDED"></path>
+                    <rect id="矩形" fill="#EDEDED" x="0" y="29" width="360" height="200" rx="8"></rect>
+                    <rect id="矩形" fill="#EDEDED" x="416" y="0" width="100" height="22"></rect>
+                    <rect id="矩形备份-7" fill="#EDEDED" x="416" y="162" width="100" height="22"></rect>
+                    <rect id="矩形备份-9" fill="#EDEDED" x="657" y="162" width="100" height="22"></rect>
+                    <rect id="矩形备份-11" fill="#EDEDED" x="928" y="162" width="100" height="22"></rect>
+                    <rect id="矩形备份-3" fill="#EDEDED" x="657" y="0" width="100" height="22"></rect>
+                    <rect id="矩形备份-5" fill="#EDEDED" x="928" y="0" width="100" height="22"></rect>
+                    <rect id="矩形备份-2" fill="#EDEDED" x="416" y="48" width="161" height="48"></rect>
+                    <rect id="矩形备份-8" fill="#EDEDED" x="416" y="210" width="161" height="48"></rect>
+                    <rect id="矩形备份-10" fill="#EDEDED" x="657" y="210" width="191" height="48"></rect>
+                    <rect id="矩形备份-12" fill="#EDEDED" x="928" y="210" width="189" height="48"></rect>
+                    <rect id="矩形备份-4" fill="#EDEDED" x="657" y="48" width="191" height="48"></rect>
+                    <rect id="矩形备份-6" fill="#EDEDED" x="928" y="48" width="189" height="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

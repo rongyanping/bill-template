@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>形状结合</title>
+    <desc>Created with Sketch.</desc>
+    <g id="自定义标签" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-423.000000, -151.000000)" fill="#258FF8" fill-rule="nonzero">
+            <g id="编组-9" transform="translate(423.000000, 151.000000)">
+                <g id="编组-8">
+                    <path d="M10.4896,4.128 L10.6,4.2 L14.6,7.2 C15.0418278,7.53137085 15.1313708,8.1581722 14.8,8.6 C14.4941192,9.00784105 13.9365107,9.11551047 13.5050252,8.86902959 L13.4,8.8 L10.9999411,7 L11,20 L9,20 L8.99994115,7 L6.6,8.8 C6.19215895,9.10588078 5.62670731,9.05311304 5.28149586,8.69567545 L5.2,8.6 C4.89411922,8.19215895 4.94688696,7.62670731 5.30432455,7.28149586 L5.4,7.2 L9.4,4.2 C9.72,3.96 10.148,3.936 10.4896,4.128 Z M20,0 L20,2 L0,2 L0,0 L20,0 Z" id="形状结合"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

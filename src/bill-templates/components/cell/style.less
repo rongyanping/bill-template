@@ -1,0 +1,61 @@
+.bill-templates-cell {
+  min-width: 60px;
+  height: 100%;
+  position: relative;
+  padding: 2px;
+  min-height: 18px;
+}
+
+.bill-templates-cell-resize-active {
+  background: rgba(247, 181, 0, 0.15);
+}
+
+.bill-templates-cell-drag-btn {
+  width: 80%;
+  height: 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: move;
+  background: rgb(246, 232, 206);
+  border: 1px solid #FA6400;
+  border-radius: 23px;
+}
+
+.bill-templates-cell-move-preview-left {
+  margin-left: 50% !important;
+  border-left: #108ee9 3px dashed;
+  // background-color: red;
+}
+
+.bill-templates-cell-move-preview-right {
+  margin-right: 50% !important;
+  border-right: #108ee9 3px dashed;
+  // background-color: green;
+}
+
+.bill-templates-cell-move-current {
+  display: none !important;
+}
+
+:global(.react-resizable-handle) {
+  background: none !important;
+  cursor: col-resize;
+}
+
+// :global(.react-resizable) {
+//   flex: ;
+// }
+
+:global(.react-resizable .react-resizable-handle-e) {
+  transform: rotate(0);
+  top: 0;
+  right: -8px;
+  margin-top: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 2;
+}

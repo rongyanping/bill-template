@@ -1,0 +1,338 @@
+{
+  "rows": [
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 6,
+          "name": "",
+          "title": "",
+          "data": "*",
+          "param": "",
+          "type": 6,
+          "percent": 100
+        },
+        {
+          "id": 2021,
+          "name": "",
+          "title": "{test}",
+          "data": "",
+          "param": "",
+          "type": 1,
+          "percent": 40,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        },
+        {
+          "id": 2021,
+          "name": "",
+          "title": "订单号",
+          "data": "{orderNo}",
+          "param": "",
+          "type": 1,
+          "percent": 60,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        },
+        {
+          "id": 5,
+          "name": "",
+          "title": "",
+          "data": "*",
+          "param": "aabbccdd",
+          "type": 5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 1,
+          "name": "",
+          "title": "流水号+桌台号:",
+          "data": "{serialNumber}/{tableOrNumberPlatevalue}",
+          "param": "",
+          "type": 1,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 1,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 1,
+          "name": "",
+          "title": "出单序号+设备id:",
+          "data": "{batchNumber}#中间插入的数据#{device.deviceId}",
+          "param": "",
+          "type": 1,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 1,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        },
+        {
+          "id": 1,
+          "name": "",
+          "title": "",
+          "data": "分隔符",
+          "param": "-",
+          "type": 5,
+          "percent": 100
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 1,
+          "name": "",
+          "title": "商品",
+          "data": "{goodSourceSize}",
+          "param": "",
+          "type": 1,
+          "percent": 70,
+          "visible": "{goodSourceSize}!=0",
+          "style": {
+            "align": 1,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        },
+        {
+          "id": 1,
+          "name": "",
+          "title": "数量",
+          "data": "{goodSourceSize}",
+          "param": "",
+          "type": 1,
+          "percent": 30,
+          "visible": "{goodSourceSize}!=0",
+          "style": {
+            "align": 3,
+            "fontSize": 4,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "data": "",
+      "visible": "",
+      "cells": [],
+      "childRows": [
+        {
+          "type": 1,
+          "data": "",
+          "visible": "",
+          "cells": [
+            {
+              "id": 1,
+              "name": "",
+              "title": "",
+              "data": "-",
+              "param": "{middleCategoryName}",
+              "type": 5,
+              "percent": 100,
+              "style": {
+                "align": 2,
+                "fontSize": 4,
+                "fontWeight": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "data": "",
+          "visible": "",
+          "cells": [
+            {
+              "id": 1,
+              "name": "",
+              "title": "",
+              "data": "{dishName}",
+              "param": "",
+              "type": 1,
+              "percent": 70,
+              "style": {
+                "align": 1,
+                "fontSize": 4,
+                "fontWeight": 1
+              }
+            },
+            {
+              "id": 1,
+              "name": "",
+              "title": "",
+              "data": "{dishQuantity}/{dishUnit}",
+              "param": "",
+              "type": 1,
+              "percent": 30,
+              "style": {
+                "align": 3,
+                "fontSize": 4,
+                "fontWeight": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 1,
+          "name": "",
+          "title": "操作员:",
+          "data": "{actor}",
+          "param": "",
+          "type": 1,
+          "percent": 50,
+          "visible": "",
+          "style": {
+            "align": 1,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        },
+        {
+          "id": 1,
+          "name": "",
+          "title": "操作时间:",
+          "data": "{operationTime}",
+          "param": "",
+          "type": 1,
+          "percent": 50,
+          "visible": "",
+          "style": {
+            "align": 3,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 2003,
+          "name": "",
+          "title": "",
+          "data": "{customCodePicture}",
+          "param": "{commentCodeMsg}",
+          "type": 2,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 2004,
+          "name": "",
+          "title": "商户logo",
+          "data": "{shopLogo}",
+          "param": "",
+          "type": 4,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 2005,
+          "name": "",
+          "title": "自定义图片",
+          "data": "{customPicture}",
+          "param": "",
+          "type": 4,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "data": "",
+      "visible": "",
+      "cells": [
+        {
+          "id": 2006,
+          "name": "",
+          "title": "",
+          "data": "{customMsg}",
+          "param": "",
+          "type": 1,
+          "percent": 100,
+          "visible": "",
+          "style": {
+            "align": 2,
+            "fontSize": 1,
+            "fontWeight": 1
+          }
+        }
+      ]
+    }
+  ]
+}

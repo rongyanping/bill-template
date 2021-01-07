@@ -1,0 +1,45 @@
+[{
+  "id": 9,
+  "parentId": 0,
+  "name": "测试父节点2",
+  "sort": 0,
+  "subTypes": [
+      {
+          "id": 104,
+          "parentId": 9,
+          "name": "测试节点4",
+          "sort": 1,
+          "subTypes": null
+      }
+  ]
+},
+{
+  "id": 10,
+  "parentId": 0,
+  "name": "测试父节点1",
+  "sort": 1,
+  "subTypes": [
+      {
+          "id": 103,
+          "parentId": 10,
+          "name": "测试节点3",
+          "sort": 1,
+          "subTypes": null
+      },
+      {
+          "id": 102,
+          "parentId": 10,
+          "name": "测试节点2",
+          "sort": 2,
+          "subTypes": null
+      },
+      {
+          "id": 101,
+          "parentId": 10,
+          "name": "测试节点1",
+          "sort": 3,
+          "subTypes": null
+      }
+  ]
+}
+]

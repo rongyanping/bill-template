@@ -1,0 +1,210 @@
+.bill-templates-container {
+  width: 100%;
+  height: calc(~'100vh - 80px');
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  position: relative;
+}
+
+.bill-templates-item {
+  border: 1px solid #ccc;
+  padding: 22px 22px 22px 18px;
+  overflow-y: auto;
+
+  height: calc(~'100vh - 80px');
+  padding-top: 50px;
+}
+
+.bill-templates-item-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: PingFangSC-Medium;
+  height: 20px;
+  color: #000;
+  opacity: 0.85;
+  margin-bottom: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  position: absolute;
+  top: 22px;
+  left: 1px;
+  width: calc(~'100% - 2px');
+  padding-left: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 99;
+  .delete-btn {
+    float: right;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+}
+
+.bill-templates-item-title2 {
+  width: calc(~'100% - 50px');
+  left: 18px;
+  height: 42px;
+  line-height: 62px;
+  top: 1px;
+  background-color: #fff;
+}
+
+// 左侧组件模块
+.bill-templates-tools {
+  flex: 1 1 auto;
+  min-width: 400px;
+}
+
+// 中间编辑模块
+.bill-templates-main {
+  width: 360px;
+  flex: 0 0 360px;
+  margin-right: 16px;
+  margin-left: 16px;
+  // overflow-y: auto;
+
+  .page-font {
+    word-break: break-all;
+    font-family: monospace;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+
+  .font-sm {
+    font-size: 12px;
+  }
+
+  .font-md {
+    font-size: 24px;
+  }
+}
+
+.bill-templates-main-view {
+  border: none;
+  margin: auto;
+}
+
+// 右侧样式编辑
+.bill-templates-style {
+  flex: 1 1 auto;
+  min-width: 400px;
+
+  .bill-templates-style-items {
+    margin-top: 14px;
+  }
+
+  .bill-templates-style-item {
+    width: 100%;
+    height: 64px;
+    line-height: 32px;
+    padding: 16px 0;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bill-templates-style-item-label {
+    display: inline-block;
+    color: #333;
+    font-family: PingFangSC-Regular;
+    margin-right: 8px;
+    text-align: left;
+  }
+
+  .bill-templates-style-item-value {
+    display: inline-block;
+    text-align: right;
+    display: flex;
+    align-items: center;
+
+    .bill-templates-style-item-value-icon {
+      font-size: 24px;
+      color: #1890ff;
+      margin-left: 10px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .bill-templates-style-item-value-input {
+    border: 0;
+    outline: 0;
+    background-color: unset;
+    text-align: right;
+    font-size: 14px;
+  }
+}
+
+// 全局
+.bill-templates-component {
+  .module {
+    margin-top: 14px;
+    overflow: hidden;
+
+    .module-title {
+      color: #000;
+      opacity: 0.65;
+      height: 20px;
+      line-height: 20px;
+      font-family: PingFangSC-Regular;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .module-items {
+    width: calc(~'100% + 16px');
+  }
+
+  .module-item {
+    display: inline-block;
+    min-width: 60px;
+    max-width: 50%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 16px;
+    cursor: pointer;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+    &:hover {
+      border: 1px solid #1890ff;
+      color: #1890ff;
+    }
+  }
+
+  .module-item-active {
+    border: 1px solid #1890ff;
+    color: #1890ff;
+  }
+
+  // 固钉
+  // :global(.ant-affix) {
+  //   // width: 100%;
+  //   // height: 64px;
+  //   // background-color: rgba(255, 255, 255, 0.9);
+  //   // line-height: 64px;
+  // }
+}
+
+.margin-right-10 {
+  margin-right: 10px !important;
+}
+
+.margin-right-0 {
+  margin-right: 0 !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
