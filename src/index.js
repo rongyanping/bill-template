@@ -6,10 +6,9 @@ import BillTemplates from './bill-templates';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
+  <div>
     <BillTemplates />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 

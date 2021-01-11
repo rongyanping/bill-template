@@ -10,11 +10,12 @@ import { getDishList, getShowKeys, hasComponentInList, checkProps } from './comm
 import Block from './components/block';
 import './style.less';
 import IconDel from '../assets/svgs/delete_bill.svg';
-import mockComponentsData from '../mock/components.json';
-// import mockComponentsData from '../../mock/bill/invalid.json';
+// import mockComponentsData from '../mock/components.json';
+import mockComponentsData from '../mock/bill/invalid.json';
 
 import { uploadImg, delImg, uploadCode } from './service';
 // TODO: 左侧默认选中组件没有对列表组件判断
+// TODO: 需要输入的内容：上传图片下方的自定义文案字段param占位符；limit字段
 const regStr = /([{}])/g;
 export default function BillTemplates({
   componentsData = mockComponentsData,
@@ -381,7 +382,7 @@ export default function BillTemplates({
         let tempObj = {};
         // setImgUrl(base64);
         const tempMainData = deepClone(mainData);
-        const tempRows = tempMainData[activeBlock.blockIndex] && tempMainData[activeBlock.blockIndex].rows ? tempMainData[block.blockIndex].rows : null;
+        const tempRows = tempMainData[activeBlock.blockIndex] && tempMainData[activeBlock.blockIndex].rows ? tempMainData[activeBlock.blockIndex].rows : null;
         let customText = '';
         let paramTemp = '';
         const renderDatasTemp = deepClone(renderDatas);

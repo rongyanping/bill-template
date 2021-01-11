@@ -33,7 +33,7 @@ export default function List({
             blockIndex={blockIndex}
             isEdit={isEdit}
             onCellResize={onCellResize}
-            onDoubleClick={onDoubleClick}
+            // onDoubleClick={onDoubleClick}
             moveCell={moveCell}
             pageSize={pageSize}
             renderDatas={{ demoObject: mockObj }}

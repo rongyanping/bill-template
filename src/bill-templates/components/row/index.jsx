@@ -193,7 +193,7 @@ export default function Row({
       key={data.row_id}
       className={`bill-templates-row ${blockActive ? 'bill-templates-row-active' : ''
         } ${className}`}
-      onDoubleClick={handleDobuleClick}
+      // onDoubleClick={handleDobuleClick}
     >
       <div className="bill-templates-cell-boxs-flex" ref={ref_cell_box_flex}>{childrenNode}</div>
     </div>
