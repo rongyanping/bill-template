@@ -14,21 +14,16 @@ const history = createHashHistory();
 export default function UploadCell({
   pageSize = 80, // 纸张类型80--48,76--42,58--32
   type = 4, // 2二维码,3条形码,4自动定义图片, 品牌logo
-  param = '自定义文本', // 图片下方的文案
+  param, // 图片下方的文案
   data = null, // 图片地址
   style = { align: 1, fontSize: 4, fontWeight: 2 }, // 节点样式
   readOnly = false, // 是否显示上传按钮; 仅自定义图片、自定义二维码支持上传
   buttonLabel = '上传图片', // 按钮文字
   onUpload, // 上传
   onCancelUpload, // 删除上传的图片
-  originData,
 }) {
-  // LG-9E02347F546B7271F8D07FCA54964DDC-zh_CN  http://facebook.github.io/react/
-  // const [imgUrl, setImgUrl] = useState('https://p0.meituan.net/rmscashier/80866718a8c8321c72556ef19ac60b2582112.png');
-  const [imgUrl, setImgUrl] = useState(data === '{shopLogo}' ? null : data);
-  const [imgKey, setKey] = useState(null);
+
   const { align, fontSize, fontWeight } = formatCellStyle(style);
-  // useEffect(() => { }, [imgUrl]);
   // 外层样式
   const boxStyle = {
     alignItems:
@@ -48,12 +43,12 @@ export default function UploadCell({
   const props = {
     showUploadList: false,
     customRequest: options => {
-      onUpload && onUpload(options, originData);
+      onUpload && onUpload(options);
     }
   };
   // 删除图片
   const handleDelImg = () => {
-    onCancelUpload && onCancelUpload(originData);
+    onCancelUpload && onCancelUpload();
   };
   // 点击上传logo
   const handleClickUpload = () => {
@@ -98,30 +93,39 @@ export default function UploadCell({
     width: `${newWidth}px`,
     height: newHeight ? `${newHeight}px` : 'auto',
   };
-  // console.log('imgUrl----' + buttonLabel, align);
+  // console.log('upload=====' + buttonLabel, data, param);
   return (
     <div className="upload-box" style={boxStyle}>
-      {!readOnly && data !== '{shopLogo}' && (
-        <Upload {...props}>{imgUrl && imgUrl !== 'null' ? null : uploadButton}</Upload>
-      )}
+      {/* 上传自定义图片/二维码 */}
+      {
+        (!readOnly && !data) && (
+          <Upload {...props}>{uploadButton}</Upload>
+        )
+      }
+      {/* 上传logo */}
       {!readOnly && data === '{shopLogo}' && uploadButton}
-      {(imgUrl && imgUrl !== 'null') ? (
-        <div style={{ border: '2px solid gray' }}>
-          <div className="preview-box" style={previewStyle}>
-            {type === 4 ? (
-              <img src={imgUrl} className="preview-img" />
-            ) : (
-                <QRCode value={imgUrl} size={newWidth} />
-              )}
-            {
-              (!data || data === 'null') && <span className="overlayer"></span>
-            }
-            {
-              (!data || data === 'null') && <Icon type="delete" className="del-icon" onClick={handleDelImg} />
-            }
+      {/* 预览图 */}
+      {
+        (data && data !== '{shopLogo}') ? (
+          <div style={{ border: '2px solid gray' }}>
+            <div className="preview-box" style={previewStyle}>
+              {
+                type === 4 ? (
+                  <img src={data} className="preview-img" />
+                ) : (
+                    <QRCode value={data} size={newWidth} />
+                  )
+              }
+              {
+                !readOnly && <span className="overlayer"></span>
+              }
+              {
+                !readOnly && <Icon type="delete" className="del-icon" onClick={handleDelImg} />
+              }
+            </div>
           </div>
-        </div>
-      ) : null}
+        ) : null
+      }
       {param && <div style={textStyle}>{param}</div>}
     </div>
   );

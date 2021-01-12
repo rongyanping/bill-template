@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { deepClone } from 'lodash';
+import { cloneDeep } from 'lodash';
 import { getPlaceholderValue } from '../../common/utils';
 import Cell from '../cell';
 import * as CellComponents from '../index';
@@ -19,6 +19,7 @@ export default function Row({
   className = "",
   onUpload,
   onCancelUpload,
+  onDoubleClick,
 }) {
   const ref = useRef();
   const ref_cell_box_flex = useRef();
@@ -57,7 +58,7 @@ export default function Row({
           } else {
             CellItem = CellComponents.TextCell;
           }
-          let demoObjectTemp = deepClone(renderDatas.demoObject);
+          let demoObjectTemp = cloneDeep(renderDatas.demoObject);
           let allComponentList = []; // 所有的组件数据
           let allObjectList = renderDatas.objectList || []; // 所有的图片、二维码数据
           renderDatas.modulesList &&
@@ -82,17 +83,19 @@ export default function Row({
           if (type === 1) {
             newData = (item.name || newTitle) + newData;
           }
-          // console.log('temp===' + item.title, newData, item);
+          // console.log('temp===' + item.title, newParam);
           // 从componentsData中获取对应cell的相关数据：buttonLabel, readOnly
           let buttonLabel = '';
-          let readOnly = false;
+          let readOnly = 'false';
           if (type === 2 || type === 4) {
             allComponentList.forEach(el => {
-              if (el.id === id && el.componentProperty) {
-                buttonLabel = el.componentProperty.buttonLabel
-                  ? el.componentProperty.buttonLabel
+              if (el.id == id && el.componentProperty) {
+                const newComponentProperty = el.componentProperty;
+                // const newComponentProperty = JSON.parse(el.componentProperty);
+                buttonLabel = newComponentProperty.buttonLabel
+                  ? newComponentProperty.buttonLabel
                   : null;
-                readOnly = el.componentProperty.readOnly;
+                readOnly = newComponentProperty.readOnly || 'false';
               }
             });
           }
@@ -102,16 +105,23 @@ export default function Row({
               newData = item.data;
             } else {
               const dataTemp = item.data && item.data.replace(regStr, '');
-              newData = '';
-              newParam = '';
-              allObjectList.forEach((el) => {
+              const paramTemp = item.param && item.param.replace(regStr, '');
+              // newData = regStr.test(newData) ? '' : newData;
+              // newParam = regStr.test(newParam) ? '' : newData;
+              let flagData = false;
+              let flagParam = false;
+              allObjectList && allObjectList.forEach((el) => {
                 if (el.placeholder === dataTemp) {
+                  flagData = true;
                   newData = el.objectValue;
                 }
                 if (el.placeholder === item.param.replace(regStr, '')) {
                   newParam = el.customText;
+                  flagParam = true;
                 }
               });
+              newData = flagData ? newData : renderDatas.demoObject[dataTemp];
+              newParam = flagParam ? newParam : renderDatas.demoObject[paramTemp];
             }
           }
           // cell是否可见 0:data存在时可见；目前默认只有0
@@ -129,7 +139,7 @@ export default function Row({
             <Cell
               key={`${data.row_id}-${item.id}-${number}`}
               parentWidth={rowWidthNew}
-              resizeable={blockActive && type === 1 && data.cells.length > 1}
+              resizeable={blockActive && type === 1 && data.cells.length > 1 && !!onCellResize}
               axis={axis}
               onResize={handleResize}
               width={cellWidth[number]}
@@ -152,7 +162,7 @@ export default function Row({
                   param={newParam}
                   style={style}
                   buttonLabel={buttonLabel}
-                  readOnly={readOnly}
+                  readOnly={readOnly === 'false' ? false : true}
                   onUpload={onUpload}
                   onCancelUpload={onCancelUpload}
                   originData={item.data}
@@ -183,8 +193,9 @@ export default function Row({
 
   // 列表内双击选中row
   const handleDobuleClick = () => {
-    console.log('双击了')
-    // onDoubleClick && onDoubleClick();
+    // 清空双击时选中的文字
+    // window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+    onDoubleClick && onDoubleClick();
   }
 
   return (
@@ -193,7 +204,7 @@ export default function Row({
       key={data.row_id}
       className={`bill-templates-row ${blockActive ? 'bill-templates-row-active' : ''
         } ${className}`}
-      // onDoubleClick={handleDobuleClick}
+      onDoubleClick={handleDobuleClick}
     >
       <div className="bill-templates-cell-boxs-flex" ref={ref_cell_box_flex}>{childrenNode}</div>
     </div>

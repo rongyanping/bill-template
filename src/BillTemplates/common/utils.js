@@ -1,6 +1,4 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-unused-expressions */
-import { union, deepClone } from 'lodash';
+import { union, cloneDeep } from 'lodash';
 
 /**
  * 字体转换 1*1:12px  2*2:24px
@@ -22,8 +20,6 @@ export function formatCellStyle({
     case 3:
       style.align = 'right';
       break;
-    default:
-      style.align = 'left';
   }
   switch (fontWeight) {
     case 1:
@@ -32,8 +28,6 @@ export function formatCellStyle({
     case 2:
       style.fontWeight = 'bold';
       break;
-    default:
-      style.fontWeight = 'normal';
   }
   switch (fontSize) {
     case 1:
@@ -42,8 +36,6 @@ export function formatCellStyle({
     case 4:
       style.fontSize = '24px';
       break;
-    default:
-      style.fontSize = '12px';
   }
   return style;
 }
@@ -145,7 +137,7 @@ export function getShowKeys(block = []) {
  */
 function removeNullNode(dishModel = []) {
   let res = [];
-  const tempDishModal = deepClone(dishModel);
+  const tempDishModal = cloneDeep(dishModel);
   function loop(arr) { // 获取新的商品list节点
     arr = arr.filter(item => item);
     arr.forEach((item) => {
@@ -174,8 +166,8 @@ function removeNullNode(dishModel = []) {
  */
 export function getDishList(isRemove, dishModel = [], key, oldDishList = [], id) {
   let res = [];
-  const tempDishModal = deepClone(dishModel);
-  const tempOldDishList = deepClone(oldDishList);
+  const tempDishModal = cloneDeep(dishModel);
+  const tempOldDishList = cloneDeep(oldDishList);
   function loopForRemove(arr) { // 移除节点
     arr.forEach((item, index) => {
       if (item.type == 2 && item.childRows && item.childRows.length) {
@@ -273,4 +265,31 @@ export function checkProps(rows = [], propName) {
   }
   loop(rows);
   return union(res);
+}
+
+/**
+ * 
+ * @param {*} block 当前block
+ * @returns {percent，cellAlias }[] 当前block内cell长度最长row的cell的{percent，cellAlias }属性
+ * 
+ */
+export function getListCells(block = []) {
+  let res = [];
+  function loop(arr = []) {
+    arr.forEach(row => {
+      if (row.type == 2 && row.childRows && row.childRows.length) {
+        return loop(row.childRows);
+      }
+      if (row.cells && row.cells.length && row.cells.length > res.length) {
+        res = [];
+        row.cells.forEach(cell => {
+          const { percent, cellAlias } = cell;
+          res.push({ percent, cellAlias });
+        });
+      }
+    });
+
+  }
+  loop(block);
+  return res;
 }

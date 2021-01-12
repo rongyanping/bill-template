@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import BillTemplates from './bill-templates';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <div>
-    <BillTemplates />
+    <App />
   </div>,
   document.getElementById('root')
 );

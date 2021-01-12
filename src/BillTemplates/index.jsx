@@ -1,21 +1,20 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-unused-expressions */
 import React, { useRef, useState, useEffect } from 'react';
 import { Affix, Button, Switch, Input, message, Icon } from 'antd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider, createDndContext } from 'react-dnd';
-import { findIndex, deepClone } from 'lodash';
+import { findIndex, cloneDeep } from 'lodash';
+import 'antd/dist/antd.css';
 import { largePageWidth, mdPageWidth, smPageWidth } from './common/constant';
 import { getDishList, getShowKeys, hasComponentInList, checkProps } from './common/utils';
+// import withLoading from 'shared/utils/withLoading';
 import Block from './components/block';
+// import api from './service';
 import './style.less';
-import IconDel from '../assets/svgs/delete_bill.svg';
-// import mockComponentsData from '../mock/components.json';
-import mockComponentsData from '../mock/bill/invalid.json';
+// import IconDel from 'assets/svgs/delete_bill.svg';
+import mockComponentsData from '../mock/bill/mockbill.json';
+import dishListJson from '../mock/dishList.json';
 
-import { uploadImg, delImg, uploadCode } from './service';
-// TODO: 左侧默认选中组件没有对列表组件判断
-// TODO: 需要输入的内容：上传图片下方的自定义文案字段param占位符；limit字段
+// TODO: 左侧默认选中组件没有对列表组件判断；
 const regStr = /([{}])/g;
 export default function BillTemplates({
   componentsData = mockComponentsData,
@@ -56,9 +55,8 @@ export default function BillTemplates({
       case 'align':
         setAlignActive(newNumber);
         break;
-      default:
     }
-    const tempMainData = deepClone(mainData);
+    const tempMainData = cloneDeep(mainData);
     const { blockIndex, rowIndex } = activeBlock;
     function loop(arr) {
       arr.forEach(row => {
@@ -83,7 +81,7 @@ export default function BillTemplates({
   // 插入分隔符 当前选中的下方插入
   const handleChangeSiwtch = (checked) => {
     if (!Object.keys(activeBlock).length) return;
-    const tempMainData = deepClone(mainData);
+    const tempMainData = cloneDeep(mainData);
     const { blockIndex } = activeBlock;
     // 当前block中是否已经存在了分隔符
     let separatorIndex = -1; // 分隔符所在的位置
@@ -102,6 +100,7 @@ export default function BillTemplates({
         type: 1,
         data: "",
         visible: "",
+        connection: activeBlock.connection,
         cells: [
           {
             id: `separator_${new Date().getTime()}`,
@@ -127,13 +126,14 @@ export default function BillTemplates({
   const handleChangeLabel = e => {
     if (!Object.keys(activeBlock).length) return;
     if (e.target.value.replace(/[\u0391-\uFFE5]/g, 'aa').length > 20) return;
-    const tempMainData = deepClone(mainData);
-    const renderDatasTemp = deepClone(renderDatas);
+    const tempMainData = cloneDeep(mainData);
+    const renderDatasTemp = cloneDeep(renderDatas);
     const { blockIndex, rowIndex } = activeBlock;
     // 修改name || 修改二维码、图片的自定义文案 || 自定义文案
     if (tempMainData[blockIndex].rows[rowIndex].cells) {
       const { type, param, data, title } = tempMainData[blockIndex].rows[rowIndex].cells[0];
       // 二维码、图片：修改rednerDatas中的objectList；同时修改要保存的objects里面的内容
+      console.log('change======', renderDatasTemp)
       if (type == 2 || type == 3 || type == 4) {
         renderDatasTemp.objectList &&
           renderDatasTemp.objectList.length &&
@@ -163,7 +163,7 @@ export default function BillTemplates({
       message.warn('最多插入9行空白行');
       return;
     }
-    const tempMainData = deepClone(mainData);
+    const tempMainData = cloneDeep(mainData);
     const { blockIndex } = activeBlock;
     const rowsTemp = tempMainData[blockIndex] && tempMainData[blockIndex].rows;
     let separatorIndex = -1; // 分隔符的位置
@@ -186,6 +186,7 @@ export default function BillTemplates({
           type: 1,
           data: "",
           visible: "",
+          connection: activeBlock.connection,
           cells: [
             {
               id: `blank_line_${new Date().getTime()}`,
@@ -212,6 +213,7 @@ export default function BillTemplates({
           type: 1,
           data: "",
           visible: "",
+          connection: activeBlock.connection,
           cells: [
             {
               id: `blank_line_${new Date().getTime()}`,
@@ -246,12 +248,12 @@ export default function BillTemplates({
   const handleBlockClick = (block, allBlock) => {
     setActiveBlock(block);
     if (Object.keys(block).length && (mainData.length || allBlock.length)) {
-      const tempMainData = mainData && mainData.length > 0 ? deepClone(mainData) : deepClone(allBlock);
+      const tempMainData = mainData && mainData.length > 0 ? cloneDeep(mainData) : cloneDeep(allBlock);
       const tempRows = tempMainData[block.blockIndex] && tempMainData[block.blockIndex].rows ? tempMainData[block.blockIndex].rows : null;
       if (!tempRows) return;
       let separatorFlag = false;
       // 隐藏整个样式编辑: rows里面只有一个分隔符
-      if (tempRows.length === 1 && tempRows[0].cells.length === 1 && tempRows[0].cells[0].type == 5) setIsShowStyleEdit(false);
+      if (tempRows && tempRows.length === 1 && tempRows[0].cells && tempRows[0].cells.length === 1 && tempRows[0].cells[0].type == 5) setIsShowStyleEdit(false);
       // 选中行为list
       if (block.isListBlock) {
         // setIsShowStyleEdit(false);
@@ -313,16 +315,25 @@ export default function BillTemplates({
             setIsShowLabelEdit(!(title && regStr.test(title)));
             // 文案编辑：图片、二维码---自定义文案取renderDatas中objectList字段；自定义文案--title为空&data为纯文本；普通文本name||title
             if (type === 2 || type === 3 || type === 4) {
-              const renderDatasTemp = deepClone(renderDatas);
+              const renderDatasTemp = cloneDeep(renderDatas);
               let textTemp = '';
+              let tempIndex = -1;
               renderDatasTemp.objectList &&
                 renderDatasTemp.objectList.length &&
-                renderDatasTemp.objectList.forEach((el2) => {
+                renderDatasTemp.objectList.forEach((el2, el2Index) => {
                   if (el2.placeholder === param.replace(regStr, '')) {
                     textTemp = el2.customText;
+                    tempIndex = el2Index;
                   }
                 });
+              if (tempIndex < 0) {
+                // 从demoObject中取数据
+                textTemp = renderDatasTemp.demoObject[param.replace(regStr, '')] || '';
+                renderDatasTemp.objectList ? renderDatasTemp.objectList.push({ customText: renderDatasTemp.demoObject[param.replace(regStr, '')] || '', placeholder: param.replace(regStr, '') }) : renderDatasTemp.objectList = [{ customText: renderDatasTemp.demoObject[param.replace(regStr, '')] || '', placeholder: param.replace(regStr, '') }];
+                ;
+              }
               setActiveLabel(textTemp);
+              setRenderDatas(renderDatasTemp);
               if (type === 4 && el.data === '{shopLogo}') {
                 setIsShowLabelEdit(false);
               } else {
@@ -360,8 +371,7 @@ export default function BillTemplates({
     }
   };
   // 上传图片
-  const handleUpload = (options, originData) => {
-    console.log('options=====', options, activeBlock);
+  const handleUpload = (options) => {
     const { file } = options;
     const isLt1M = file.size / 1024 / 1024 < 1;
     const isJPG = file.type === 'image/jpeg';
@@ -374,109 +384,106 @@ export default function BillTemplates({
       message.warn('图片超过1M,不允许上传');
       return;
     }
+    const tempMainData = cloneDeep(mainData);
+    const renderDatasTemp = cloneDeep(renderDatas);
+    const { blockIndex, rowIndex } = activeBlock;
+    const tempRows = tempMainData[blockIndex] && tempMainData[blockIndex].rows ? tempMainData[blockIndex].rows : null;
+    const { type, data } = tempRows[rowIndex].cells[0];
     let reader;
-    if (file) {
-      reader = new FileReader();
-      reader.onload = function (event) {
-        const base64 = event.target.result;
-        let tempObj = {};
-        // setImgUrl(base64);
-        const tempMainData = deepClone(mainData);
-        const tempRows = tempMainData[activeBlock.blockIndex] && tempMainData[activeBlock.blockIndex].rows ? tempMainData[activeBlock.blockIndex].rows : null;
-        let customText = '';
-        let paramTemp = '';
-        const renderDatasTemp = deepClone(renderDatas);
-        renderDatasTemp.objectList.forEach((el) => {
-          if (el.placeholder === paramTemp) {
-            customText = el.customText;
-          }
-        });
-        if (tempRows.cells[0].type == 4) {
-          let placeholder = '';
-          const { blockIndex, rowIndex } = activeBlock;
-          if (tempMainData[blockIndex].rows[rowIndex].cells && tempMainData[blockIndex].rows[rowIndex].cells.length) {
-            tempMainData[blockIndex].rows[rowIndex].cells.forEach((el) => {
-              if ((el.type == 2 || el.type == 3 || el.type == 4) && el.data === originData) {
-                placeholder = tempMainData[blockIndex].rows[rowIndex].cells[0].data;
-                paramTemp = tempMainData[blockIndex].rows[rowIndex].cells[0].param;
-              }
-            });
-          }
-          const params = {
-            code: base64,
-            placeholder,
-          };
-          uploadImg(params)
-            .then(data => {
-              console.log('res00000---', data);
-              if (data.code === 0) {
-                tempObj = {
-                  id: data.body.id,
-                  objectKey: data.body.key, // 上传图片返回的key
-                  objectValue: data.body.url, // 上传图片对应的oss地址
-                  placeholder: data.body.placeholder, // 图片在模板中的占位符
-                  customText, // 自定义文案
-                }
-              }
-            })
-            .cathch(e => {
-              message.error(e);
-            });
-        } else {
-          const params = {
-            codeFile: base64,
-          };
-          uploadCode(params)
-            .then(data => {
-              console.log('res111111---', data);
-              if (data.code === 0) {
-                tempObj = {
-                  id: data.body.id,
-                  objectKey: data.body.key, // 上传图片返回的key
-                  objectValue: data.body.url, // 上传图片对应的oss地址
-                  placeholder: data.body.placeholder, // 图片在模板中的占位符
-                  customText, // 自定义文案
-                }
-              }
-            })
-            .cathch(e => {
-              message.error(e);
-            });
-        }
-        let indexTemp = -1; // 是否已经存在改图片的信息
-        renderDatasTemp.objectList.forEach((el, index) => {
-          if (el.placeholder === originData) {
-            indexTemp = index;
-          }
-        });
-        indexTemp > -1 ? renderDatasTemp.objectList[indexTemp] = tempObj : renderDatasTemp.objectList.push(tempObj);
-        setRenderDatas(renderDatasTemp);
-      };
-    }
+    // if (file) {
+    //   reader = new FileReader();
+    //   reader.onload = async (event) => {
+    //     const base64 = event.target.result;
+    //     let tempObj = {};
+    //     try {
+    //       if (type == 4) { // 自定义图片
+    //         let placeholder = '';
+    //         if (tempRows.rows[rowIndex].cells && tempRows.rows[rowIndex].cells.length) {
+    //           tempRows.rows[rowIndex].cells.forEach((el) => {
+    //             if (el.type == 4 && el.data === data) {
+    //               placeholder = tempRows.rows[rowIndex].cells[0].data;
+    //             }
+    //           });
+    //         }
+    //         const params = {
+    //           code: base64,
+    //           placeholder,
+    //         };
+    //         const res = await withLoading(api.uploadImg)(params);
+    //         if (res.success) {
+    //           tempObj = {
+    //             id: res.body.id,
+    //             objectKey: res.body.key, // 上传图片返回的key
+    //             objectValue: res.body.url, // 上传图片对应的oss地址
+    //             placeholder: res.body.placeholder, // 图片在模板中的占位符
+    //           }
+    //         }
+    //       } else { // 自定义二维码，条形码
+    //         const formData = new FormData();
+    //         formData.append('codeFile', file);
+    //         const res = await withLoading(api.uploadCode)(formData);
+    //         if (res.success) {
+    //           if (!res.body.codeText) {
+    //             message.error('请检查是否是二维码');
+    //             return;
+    //           }
+    //           tempObj = {
+    //             objectValue: res.body.codeText, // 上传图片对应的oss地址
+    //             placeholder: data.replace(regStr, ''), // 图片在模板中的占位符
+    //           }
+    //         } else {
+    //           message.error(res.message);
+    //         }
+    //       }
+    //     } catch (error) {
+    //       console.log('上传自定义图片/二维码错误：', error);
+    //     }
+    //     let indexTemp = renderDatasTemp.objectList.length; // 是否已经存在改图片的信息
+    //     renderDatasTemp.objectList.forEach((el, index) => {
+    //       if (el.placeholder === data) {
+    //         indexTemp = index;
+    //       }
+    //     });
+    //     renderDatasTemp.objectList.splice(indexTemp, 1, tempObj);
+    //     // console.log('renderDatasTemp=====', renderDatasTemp, tempMainData);
+    //     setRenderDatas(renderDatasTemp);
+    //   };
+    // }
     reader.readAsDataURL(file);
   };
   // 删除上传的图片
-  const handleDeleteUpload = (originData) => {
-    const renderDatasTemp = deepClone(renderDatas);
-    let imgKey = '';
+  const handleDeleteUpload = async () => {
+    const renderDatasTemp = cloneDeep(renderDatas);
+    const tempMainData = cloneDeep(mainData);
+    const { blockIndex, rowIndex } = activeBlock;
+    const tempRows = tempMainData[blockIndex] && tempMainData[blockIndex].rows ? tempMainData[blockIndex].rows : null;
+    const { type, data } = tempRows[0].cells[0];
+    let imgId = '';
     let indexTemp = -1;
     renderDatasTemp.objectList.forEach((el, index) => {
-      if (el.placeholder === originData) {
-        imgKey = el.objectKey;
+      if (el.placeholder === data) {
+        imgId = el.id;
         indexTemp = index;
       }
     });
-    const params = { key: imgKey };
-    delImg(params)
-      .then(data => {
-        if (data.code === 0) {
-          message.success('删除成功');
-          indexTemp > -1 ? renderDatasTemp.objectList.splice(indexTemp, -1) : '';
-        }
-      })
-      .catch(e => {
-        message.error(e);
-      });
+    // 自定义二维码: 只删除objecList中的数据 不需要使用删除接口
+    // if (type == 2) {
+    //   renderDatasTemp.objectList.splice(indexTemp, 1);
+    // } else if (type == 4) { // 自定义图片：使用删除接口删除
+    //   const params = { id: imgId };
+    //   try {
+    //     const res = await withLoading(api.delImg)(params);
+    //     if (res.success) {
+    //       message.success('删除成功');
+    //       indexTemp > -1 ? renderDatasTemp.objectList.splice(indexTemp, 1) : '';
+    //     } else {
+    //       message.error(res.message);
+    //     }
+    //   } catch (error) {
+    //     message.error(error);
+    //   }
+    // }
+    setRenderDatas(renderDatasTemp);
   };
 
   /**
@@ -556,9 +563,9 @@ export default function BillTemplates({
       }
       if (rowTypeNow === 'normal' && !row.connection) { // 普通业务row位置
         blocks[blockLength].rowIndex = blocks[blockLength].rows.length - 1;
-      } else if (rowTypeNow === 'normal' && !row.connection) { // 判断列表内是否有表头
+      } else if (rowTypeNow === 'normal' && row.connection) { // 判断列表内是否有表头
         const headerRow = blocks[blockLength].rows.filter(i => row.type == 1 && row.cells && row.cells.length && row.cells[0].type == 1);
-        blocks[blockLength].hasHeader(!!(headerRow && headerRow.length));
+        blocks[blockLength].hasHeader = !!(headerRow && headerRow.length);
       }
     });
     setMainData(blocks);
@@ -568,11 +575,11 @@ export default function BillTemplates({
     setTimeout(() => {
       // 默认选中第一个
       if (blocks && isEdit) {
-        const block = deepClone(blocks[0]);
+        const block = cloneDeep(blocks[0]);
         let isListBlock = false; // 是否为列表block
         const blockIndex = 0;
         block && block.rows && block.rows.forEach(row => isListBlock = isListBlock || row.type == 2);
-        block && handleBlockClick({ blockKey: block.key, blockIndex, rowIndex: block.rowIndex, isListBlock, connection: block.connection }, blocks);
+        block && handleBlockClick({ blockKey: block.key, blockIndex, rowIndex: block.rowIndex, isListBlock, connection: block.connection, hasHeader: block.hasHeader }, blocks);
       }
       // 默认选中的组件
       const componentActiveTemp = [];
@@ -602,16 +609,37 @@ export default function BillTemplates({
   }, [componentsData, isReset]);
 
   // cell调整宽度
-  const handleCellResize = (cellWidth, blockIndex, rowIndex) => {
-    const tempDataSource = deepClone(mainData);
-    tempDataSource[blockIndex].rows[rowIndex].cells.forEach(
-      (i, num) => (i.percent = cellWidth[num])
-    );
+  const handleCellResize = (cellWidth = [], blockIndex, rowIndex, isList) => {
+    const tempDataSource = cloneDeep(mainData);
+    if (isList) { // 列表cell宽度调整
+      function loop(row) {
+        if (row.type == 2 && row.childRows && row.childRows.length) {
+          row.childRows.forEach(i => loop(i));
+        }
+        if (row.type == 1 && row.cells && row.cells.length) {
+          row.cells.forEach((cell, num) => {
+            cellWidth.forEach(i => {
+              if (cell.cellAlias && i.cellAlias === cell.cellAlias) {
+                row.cells[num].percent = i.percent;
+              }
+            })
+          })
+        }
+      }
+      tempDataSource[blockIndex].rows.forEach(row => {
+        const rowType = getRowType(row);
+        if (rowType === 'normal') loop(row);
+      });
+    } else { // 非列表cell宽度调整
+      tempDataSource[blockIndex].rows[rowIndex].cells.forEach(
+        (i, num) => (i.percent = cellWidth[num])
+      );
+    }
     setMainData(tempDataSource);
   };
   // 移动行
   const moveBlock = (dragRow, dropRow) => {
-    const tempData = deepClone(mainData);
+    const tempData = cloneDeep(mainData);
     const tempRow = tempData[dragRow];
     if (dragRow > dropRow) {
       // 向前
@@ -628,13 +656,27 @@ export default function BillTemplates({
   // 删除行
   const handleRemoveRow = () => {
     if (Object.keys(activeBlock).length) {
-      // 已选中
-      const tempDataSource = deepClone(mainData);
+      const tempDataSource = cloneDeep(mainData);
+      const { blockIndex, rowIndex } = activeBlock;
+      const tempRows = tempDataSource[blockIndex] && tempDataSource[blockIndex].rows ? tempDataSource[blockIndex].rows : null;
+      // 删除objectList中的自定义二维码数据
+      const { type, data } = tempRows[rowIndex].cells[0];
+      if (type == 2 || type == 3) {
+        const renderDatasTemp = cloneDeep(renderDatas);
+        let indexTemp = -1;
+        renderDatasTemp.objectList && renderDatasTemp.objectList.forEach((el, index) => {
+          if (el.placeholder === data.replace(regStr, '')) {
+            indexTemp = index;
+          }
+        });
+        indexTemp > -1 ? renderDatasTemp.objectList.splice(indexTemp, 1) : null;
+        setRenderDatas(renderDatasTemp);
+      }
+      // mainData中删除改数据
       tempDataSource.splice(activeBlock.blockIndex, 1);
       // setActiveBlock({});
       // 删除已选中的组件状态
-      const componentActiveTemp = deepClone(componentActive);
-      const tempRows = tempDataSource[activeBlock.blockIndex] && tempDataSource[activeBlock.blockIndex].rows ? tempDataSource[activeBlock.blockIndex].rows : null;
+      const componentActiveTemp = cloneDeep(componentActive);
       if (tempRows && tempRows[activeBlock.rowIndex].cells && tempRows[activeBlock.rowIndex].cells.length) {
         tempRows[activeBlock.rowIndex].cells.forEach((el) => {
           if (componentActiveTemp.indexOf(el.id) > -1) {
@@ -644,7 +686,7 @@ export default function BillTemplates({
       }
       // 默认选中的行
       if (tempDataSource && isEdit) {
-        const block = deepClone(tempDataSource[0]);
+        const block = cloneDeep(tempDataSource[0]);
         let isListBlock = false; // 是否为列表block
         const blockIndex = 0;
         block && block.rows.forEach(row => isListBlock = isListBlock || row.type == 2);
@@ -652,6 +694,7 @@ export default function BillTemplates({
       }
       setComponentActive(componentActiveTemp);
       setMainData(tempDataSource);
+
     }
   };
   /**
@@ -664,7 +707,7 @@ export default function BillTemplates({
    */
   const moveCell = (dragCell, dragRow, dragBlock, dropCell, dropRow, dropBlock, needAddRow) => {
     console.log("00refmoveCell ~ dragCell, dragRow, dragBlock, dropCell, dropRow, dropBlock, needAddRow", dragCell, dragRow, dragBlock, dropCell, dropRow, dropBlock, needAddRow)
-    const tempData = deepClone(mainData);
+    const tempData = cloneDeep(mainData);
     const tempBlock = tempData[dragBlock];
     const tempRow = tempBlock.rows[dragRow];
     const tempCells = tempRow.cells;
@@ -731,10 +774,29 @@ export default function BillTemplates({
   const [componentActive, setComponentActive] = useState([]); // 所有选中的组件的id组成的数组
   // 选中左侧组件
   const moduleComponentClick = (item) => {
+    const mainDataTemp = cloneDeep(mainData);
+    let componentActiveTemp = cloneDeep(componentActive);
+    // 插入菜品list json
+    if (item === 'dishList') {
+      const temp = {
+        key: new Date().getTime(),
+        rows: [],
+        connection: '',
+        rowIndex: mainDataTemp.length,
+      }
+      dishListJson.dishList && dishListJson.dishList.forEach((el, elIndex) => {
+        temp.rows.push(el);
+        temp.connection = el.connection;
+      });
+      mainDataTemp.splice(activeBlock.blockIndex + 1, 0, temp);
+      setMainData(mainDataTemp);
+      return;
+    }
     const { type, width, id, label, placeholder, componentProperty: componentPropertyStr, valueStyle } = item;
-    const componentProperty = componentPropertyStr && JSON.parse(componentPropertyStr);
-    const mainDataTemp = deepClone(mainData);
-    let componentActiveTemp = deepClone(componentActive);
+    console.log('componentPropertyStr=====', componentPropertyStr, item);
+    const componentProperty = componentPropertyStr;
+    // const componentProperty = componentPropertyStr ? JSON.parse(componentPropertyStr) : null;
+
     // 已经存在多少个当前要添加的组件了
     const limit = componentProperty.limit || 1;
     const notRemove = componentProperty.notRemove || false;
@@ -800,7 +862,8 @@ export default function BillTemplates({
           rows: componentProperty.json,
           connection: componentProperty.connection,
         }
-        mainDataTemp.push(temp);
+        mainDataTemp.splice(activeBlock.blockIndex + 1, 0, temp);
+        console.log('data=====', mainDataTemp)
         componentActiveTemp.push(item.id);
       } else if (activeBlock.connection === componentProperty.connection) { // 非普通表格判断是否属于当前表格
         let tempShowKeys = [];
@@ -844,17 +907,29 @@ export default function BillTemplates({
   /**
    * 底部 保存 取消 恢复默认配置
    */
-  // 保存
+  // 保存 demoObject content:rows
   const handleSave = () => {
     const newContentJson = [];
-    const mainDataTemp = deepClone(mainData);
-    const renderDatasTemp = deepClone(renderDatas);
+    const mainDataTemp = cloneDeep(mainData);
+    const renderDatasTemp = cloneDeep(renderDatas);
     mainDataTemp.forEach((el) => {
       newContentJson.push(...el.rows)
     });
     renderDatasTemp.content && renderDatasTemp.content.rows ? renderDatasTemp.content.rows = newContentJson : '';
-    renderDatasTemp.content = renderDatasTemp.content ? JSON.parse(renderDatasTemp.content) : undefined;
-    onSubmit && onSubmit(renderDatasTemp);
+    // renderDatasTemp.content = renderDatasTemp.content ? JSON.stringify(renderDatasTemp.content) : undefined;
+    renderDatasTemp.objects = renderDatasTemp.objectList || null;
+    const { id, name, content, baseTemplate, url, objects } = renderDatasTemp;
+    const newParams = {
+      id,
+      name,
+      content,
+      baseTemplate,
+      url,
+      objects,
+    }
+    console.log('save=====', JSON.stringify(renderDatasTemp.content));
+    // module
+    // onSubmit && onSubmit(newParams);
   };
   // 恢复默认配置
   const handleReset = () => {
@@ -874,6 +949,17 @@ export default function BillTemplates({
             <div>
               <div className="bill-templates-item-title">选择票据显示内容</div>
             </div>
+            <div className="module" key={0}>
+              <div className="module-title">额外信息</div>
+              <div className="module-items">
+                <div
+                  className="module-item"
+                  onClick={moduleComponentClick.bind(this, 'dishList')}
+                >
+                  菜品list
+                </div>
+              </div>
+            </div>
             {componentsData.modulesList && componentsData.modulesList.map(item => (
               <div className="module" key={item.id}>
                 <div className="module-title">{item.name}</div>
@@ -884,9 +970,9 @@ export default function BillTemplates({
                         key={el.id}
                         className={componentActive.indexOf(el.id) > -1 ? "module-item module-item-active" : "module-item"}
                         onClick={moduleComponentClick.bind(this, el)}
-                        title={el.label}
+                        title={el.label.replace(/[\s\：]+/g, '')}
                       >
-                        {el.label}
+                        {el.label.replace(/[\s\：]+/g, '')}
                       </div>
                     ))
                     : null}
@@ -905,7 +991,8 @@ export default function BillTemplates({
             <div className="bill-templates-item-title bill-templates-item-title2">
               <span>编辑</span>
               <span className="delete-btn" onClick={handleRemoveRow}>
-                <IconDel />
+                {/* <IconDel /> */}
+                <Icon type="delete" style={{ fontSize: '24px' }} />
               </span>
             </div>
             <div className="bill-templates-edit-body page-font">

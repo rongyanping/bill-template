@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ResizableBox } from 'react-resizable';
 import { useDrag, useDrop } from 'react-dnd';
+import { Icon } from 'antd';
 import { ItemType } from '../../common/constant';
-import IconCellDrag from '../../../assets/svgs/cell_drag.svg';
+// import IconCellDrag from '../../../assets/svgs/cell_drag.svg';
 import 'react-resizable/css/styles.css';
 import './style.less';
 
@@ -34,25 +35,25 @@ export default function Cell({
       return item.blockIndex === blockIndex && item.is_text && item.isCell;
     },
     collect: monitor => {
-      const { cellId: dragCellId, index: dragCellIndex, rowId: dragRowId, blockIndex: dragBlockIndex,rowIndex: dragRowIndex, isCell } = monitor.getItem() || {};
+      const { cellId: dragCellId, index: dragCellIndex, rowId: dragRowId, blockIndex: dragBlockIndex, rowIndex: dragRowIndex, isCell } = monitor.getItem() || {};
       if (isCell && dragBlockIndex === blockIndex) { // 拖动的为同行cell时
         console.log("cell====dragCellIndex,cellIndex", dragCellIndex, cellIndex)
         if (dragCellIndex === cellIndex) {
           return {};
         }
         return {
-            isOver: monitor.isOver(),
-            dropClassName:
+          isOver: monitor.isOver(),
+          dropClassName:
             dragCellIndex < cellIndex
-                ? ' bill-templates-cell-move-preview-right'
-                : ' bill-templates-cell-move-preview-left',
-          };
-        }
-      },
-      drop: item => {
-        const { index: dragCellIndex, blockIndex: dragBlockIndex, rowIndex: dragRowIndex } = item;
-        console.log('183 cell li', item)
-        moveCell(dragCellIndex, dragRowIndex, dragBlockIndex, cellIndex, rowIndex, blockIndex);
+              ? ' bill-templates-cell-move-preview-right'
+              : ' bill-templates-cell-move-preview-left',
+        };
+      }
+    },
+    drop: item => {
+      const { index: dragCellIndex, blockIndex: dragBlockIndex, rowIndex: dragRowIndex } = item;
+      console.log('183 cell li', item)
+      moveCell(dragCellIndex, dragRowIndex, dragBlockIndex, cellIndex, rowIndex, blockIndex);
     },
   });
   // 可拖拽
@@ -96,17 +97,21 @@ export default function Cell({
         ref={ref}
       >
         {children}
-        {canDrag && data.type === 1 && <div ref={drag} className="bill-templates-cell-drag-btn" >
-          <IconCellDrag width="100%" height={8} style={{ verticalAlign: 'text-top' }} /></div>}
+        {
+          canDrag && data.type === 1 && <div ref={drag} className="bill-templates-cell-drag-btn" >
+            {/* <IconCellDrag width="100%" height={8} style={{ verticalAlign: 'text-top' }} /> */}
+            <Icon type="drag" />
+          </div>
+        }
       </div>
     </ResizableBox>
   ) : (
-    <div
-      ref={ref}
-      className="bill-templates-cell"
-      style={{ width: `${width}%` }}
-    >
-      {children}
-    </div>
-  );
+      <div
+        ref={ref}
+        className="bill-templates-cell"
+        style={{ width: `${width}%` }}
+      >
+        {children}
+      </div>
+    );
 }

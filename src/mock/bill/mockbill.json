@@ -22,7 +22,6 @@
     "memberPayment": "0.00",
     "customerPhone": "133***345",
     "memberName": "魏xx",
-    "roundingAllAmount": "12.5",
     "preferentialAllReturn": "1.5",
     "additionAmountReturn": "1.5",
     "roundingAmount": "0.00",
@@ -255,35 +254,10 @@
     "ticket": "",
     "ticketName": "消费清单(结账单)",
     "tradeOrderDevice": "KPOS",
-    "tradeOrderNumber": "121321331"
+    "tradeOrderNumber": "121321331",
+    "customMsg": "自定义图片文案",
+    "billPicture": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3950174433,268576240&fm=11&gp=0.jpg"
   },
-  "objectList": [
-    {
-      "id": "1",
-      "objectKey": "",
-      "objectValue": "https://p0.meituan.net/rmscashier/80866718a8c8321c72556ef19ac60b2582112.png",
-      "placeholder": "billPicture"
-    },
-    {
-      "placeholder": "billMsg",
-      "customText": "发票二维码文案"
-    },
-    {
-      "id": 2,
-      "placeholder": "customCodePicture"
-    },
-    {
-      "placeholder": "commentCodeMsg",
-      "customText": "自定义二维码文案"
-    },
-    {
-      "placeholder": "customPicture"
-    },
-    {
-      "placeholder": "customMsg",
-      "customText": "上传图片自定义文案"
-    }
-  ],
   "modulesList": [
     {
       "id": 1,
@@ -366,7 +340,8 @@
           "componentProperty": {
             "visiable": "{customPicture}0",
             "param": "{customMsg}",
-            "buttonLabel": "上传自定义图片"
+            "buttonLabel": "上传自定义图片",
+            "readOnly": false
           },
           "sort": 5,
           "row": 1,
@@ -634,10 +609,10 @@
             "fontWeight": "1"
           },
           "placeholder": "{shopLogo}",
-          "type": 1,
+          "type": 4,
           "componentProperty": {
             "visiable": "{shopLogo}0",
-            "buttonLabel": "上传门店图片"
+            "buttonLabel": "上传商户logo"
           },
           "sort": 4,
           "row": 1,
@@ -2443,7 +2418,8 @@
           "placeholder": "{customCodePicture}",
           "componentProperty": {
             "visiable": "{customCodePicture}",
-            "buttonLabel": "上传自定义二维码"
+            "buttonLabel": "上传自定义二维码",
+            "readOnly": false
           },
           "sort": 1,
           "row": 1,
@@ -2486,7 +2462,7 @@
           "type": 2,
           "placeholder": "{billPicture}",
           "componentProperty": {
-            "visiable": "{billPicture}",
+            "visiable": "{billPicture}0",
             "readOnly": true
           },
           "sort": 3,
@@ -2607,7 +2583,7 @@
     },
     {
       "id": 12,
-      "name": "二维码",
+      "name": "收获信息",
       "describe": "",
       "sort": 12,
       "componentList": [
@@ -2891,18 +2867,39 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 1018,
             "name": "",
-            "title": "",
+            "title": "品牌logo",
             "data": "{shopLogo}",
-            "param": "{shopName}",
+            "param": "",
             "type": 4,
             "percent": 100,
-            "visible": "",
             "style": {
-              "align": 2,
-              "fontSize": 1,
-              "fontWeight": 1
+              "align": "2",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{shopLogo}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1001,
+            "name": "",
+            "title": "门店名称：",
+            "data": "{shopName}0",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -2913,10 +2910,10 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436546797",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -2934,18 +2931,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 1013,
             "name": "",
-            "title": "流水号:",
+            "title": "流水号：",
             "data": "{serialNumber}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "{serialNumber}",
             "style": {
               "align": 1,
               "fontSize": 4,
-              "fontWeight": 1
+              "fontWeight": "1"
             }
           }
         ]
@@ -2956,40 +2952,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 1008,
             "name": "",
-            "title": "",
-            "data": "{dinnerType}-{tradeOrderDevice}",
-            "param": "",
-            "type": 1,
-            "percent": 100,
-            "visible": "",
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "人数:",
+            "title": "人数：",
             "data": "{peopleCount}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3000,19 +2973,19 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 1010,
             "name": "",
-            "title": "顾客/会员:",
-            "data": "{memberName}（{customerPhone}）",
+            "title": "会员手机号",
+            "data": "{customerPhone}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{customerPhone}0"
           }
         ]
       },
@@ -3022,18 +2995,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 1012,
             "name": "",
-            "title": "订单号:",
+            "title": "订单号：",
             "data": "{tradeOrderNumber}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3044,10 +3016,10 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436582405",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -3062,6 +3034,7 @@
       {
         "type": 2,
         "data": "{middleCategories}",
+        "connection": "middleCategories",
         "visible": "",
         "childRows": [
           {
@@ -3077,6 +3050,7 @@
                 "param": "",
                 "type": 1,
                 "percent": 100,
+                "cellAlias": "item_middle_category_name",
                 "style": {
                   "align": 1,
                   "fontSize": 1,
@@ -3100,9 +3074,10 @@
                     "name": "",
                     "title": "",
                     "data": "{dishName}",
+                    "cellAlias": "item_name",
                     "param": "",
                     "type": 1,
-                    "percent": 50,
+                    "percent": 70,
                     "style": {
                       "align": 1,
                       "fontSize": 1,
@@ -3114,9 +3089,10 @@
                     "name": "",
                     "title": "",
                     "data": "X{dishQuantity}",
+                    "cellAlias": "item_quantity",
                     "param": "",
                     "type": 1,
-                    "percent": 50,
+                    "percent": 30,
                     "style": {
                       "align": 3,
                       "fontSize": 1,
@@ -3145,6 +3121,7 @@
                             "name": "",
                             "title": "",
                             "data": "  -{dishName}",
+                            "cellAlias": "item_name",
                             "param": "",
                             "type": 1,
                             "percent": 70,
@@ -3159,6 +3136,7 @@
                             "name": "",
                             "title": "",
                             "data": "X{dishQuantity}",
+                            "cellAlias": "item_quantity",
                             "param": "",
                             "type": 1,
                             "percent": 30,
@@ -3185,6 +3163,7 @@
                                 "name": "",
                                 "title": "",
                                 "data": "  -加料:{dishNameAndPriceName}",
+                                "cellAlias": "item_name",
                                 "param": "",
                                 "type": 1,
                                 "percent": 70,
@@ -3199,6 +3178,7 @@
                                 "name": "",
                                 "title": "",
                                 "data": "X{dishNameAndPriceQuantity}",
+                                "cellAlias": "item_quantity",
                                 "param": "",
                                 "type": 1,
                                 "percent": 30,
@@ -3227,6 +3207,7 @@
                                 "name": "",
                                 "title": "",
                                 "data": "  -做法:{dishNameAndPriceName}",
+                                "cellAlias": "item_name",
                                 "param": "",
                                 "type": 1,
                                 "percent": 70,
@@ -3241,6 +3222,7 @@
                                 "name": "",
                                 "title": "",
                                 "data": "X{dishNameAndPriceQuantity}",
+                                "cellAlias": "item_quantity",
                                 "param": "",
                                 "type": 1,
                                 "percent": 30,
@@ -3273,6 +3255,7 @@
                         "name": "",
                         "title": "",
                         "data": "  -加料:{dishNameAndPriceName}",
+                        "cellAlias": "item_name",
                         "param": "",
                         "type": 1,
                         "percent": 70,
@@ -3287,6 +3270,7 @@
                         "name": "",
                         "title": "",
                         "data": "X{dishNameAndPriceQuantity}",
+                        "cellAlias": "item_quantity",
                         "param": "",
                         "type": 1,
                         "percent": 30,
@@ -3315,6 +3299,7 @@
                         "name": "",
                         "title": "",
                         "data": "  -做法:{dishNameAndPriceName}",
+                        "cellAlias": "item_name",
                         "param": "",
                         "type": 1,
                         "percent": 70,
@@ -3329,6 +3314,7 @@
                         "name": "",
                         "title": "",
                         "data": "X{dishNameAndPriceQuantity}",
+                        "cellAlias": "item_quantity",
                         "param": "",
                         "type": 1,
                         "percent": 30,
@@ -3349,6 +3335,7 @@
       {
         "type": 1,
         "data": "",
+        "connection": "middleCategories",
         "visible": "",
         "cells": [
           {
@@ -3373,178 +3360,32 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "应付合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{payAllAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
-            "param": "-",
-            "type": 5,
-            "percent": 100,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
+            "id": 2010,
             "name": "",
             "title": "整单备注：",
             "data": "{memo}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "{memo}",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{memo}0"
           }
         ]
       },
       {
         "type": 1,
         "data": "",
-        "visible": "{memo}",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
-            "param": "-",
-            "type": 5,
-            "percent": 100,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 2,
-        "data": "{privilegeTypes}",
         "visible": "",
-        "childRows": [
-          {
-            "type": 1,
-            "data": "",
-            "visible": "",
-            "cells": [
-              {
-                "id": 1,
-                "name": "",
-                "title": "",
-                "data": "{privilegeTypeName}",
-                "param": "",
-                "type": 1,
-                "percent": 100,
-                "style": {
-                  "align": 1,
-                  "fontSize": 1,
-                  "fontWeight": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": 2,
-            "data": "{privilegeBeanList}",
-            "visible": "",
-            "childRows": [
-              {
-                "type": 1,
-                "data": "",
-                "visible": "",
-                "cells": [
-                  {
-                    "id": 1,
-                    "name": "",
-                    "title": "",
-                    "data": "  -[{privilegeName}]",
-                    "param": "",
-                    "type": 1,
-                    "percent": 50,
-                    "style": {
-                      "align": 1,
-                      "fontSize": 1,
-                      "fontWeight": 1
-                    }
-                  },
-                  {
-                    "id": 1,
-                    "name": "",
-                    "title": "",
-                    "data": "{privilegeAmount}",
-                    "param": "",
-                    "type": 1,
-                    "percent": 50,
-                    "style": {
-                      "align": 3,
-                      "fontSize": 1,
-                      "fontWeight": 1
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436623219",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -3559,6 +3400,7 @@
       {
         "type": 2,
         "data": "{additions}",
+        "connection": "additions",
         "visible": "",
         "childRows": [
           {
@@ -3567,13 +3409,13 @@
             "visible": "",
             "cells": [
               {
-                "id": 1,
+                "id": 33,
                 "name": "",
                 "title": "",
                 "data": "{attachName}",
                 "param": "",
                 "type": 1,
-                "percent": 50,
+                "percent": 70,
                 "style": {
                   "align": 1,
                   "fontSize": 1,
@@ -3581,13 +3423,13 @@
                 }
               },
               {
-                "id": 1,
+                "id": 33,
                 "name": "",
                 "title": "",
                 "data": "{attachAmount}",
                 "param": "",
                 "type": 1,
-                "percent": 50,
+                "percent": 30,
                 "style": {
                   "align": 3,
                   "fontSize": 1,
@@ -3601,12 +3443,14 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
+        "connection": "paymentDiscounts",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436592990",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -3624,31 +3468,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 5001,
             "name": "",
-            "title": "",
-            "data": "原价合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
+            "title": "商品原价合计",
             "data": "{dishOriginalAmount}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "align": 1,
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3659,31 +3489,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 5002,
             "name": "",
-            "title": "",
-            "data": "优惠合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
+            "title": "优惠合计",
             "data": "{preferentialAll}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "align": 1,
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3694,31 +3510,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 5003,
             "name": "",
-            "title": "",
-            "data": "附加费合计",
+            "title": "附加费合计",
+            "data": "{preferentialAll}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{additionAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3729,31 +3531,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 5004,
             "name": "",
-            "title": "",
-            "data": "四舍五入",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
+            "title": "四舍五入",
             "data": "{roundingAllAmount}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "align": 1,
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -3761,12 +3549,13 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436692374",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -3784,52 +3573,19 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 2014,
             "name": "",
-            "title": "",
-            "data": "应付金额",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
+            "title": "应付金额：",
             "data": "{payAllAmount}",
             "param": "",
             "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
-            "param": "-",
-            "type": 5,
             "percent": 100,
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{payAllAmount}0"
           }
         ]
       },
@@ -3839,134 +3595,10 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610442621594",
             "name": "",
             "title": "",
-            "data": "抹零",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{quiteZero}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "溢收",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{extraAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
-            "param": "-",
-            "type": 5,
-            "percent": 100,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "商家实收",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{realPayAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -3981,6 +3613,7 @@
       {
         "type": 2,
         "data": "{payInfos}",
+        "connection": "payInfos",
         "visible": "",
         "childRows": [
           {
@@ -3989,13 +3622,13 @@
             "visible": "",
             "cells": [
               {
-                "id": 1,
+                "id": 43,
                 "name": "",
                 "title": "",
                 "data": "{payInfoName}",
                 "param": "",
                 "type": 1,
-                "percent": 50,
+                "percent": 70,
                 "style": {
                   "align": 1,
                   "fontSize": 1,
@@ -4003,13 +3636,13 @@
                 }
               },
               {
-                "id": 1,
+                "id": 43,
                 "name": "",
                 "title": "",
                 "data": "{payInfoAmount}",
                 "param": "",
                 "type": 1,
-                "percent": 50,
+                "percent": 30,
                 "style": {
                   "align": 3,
                   "fontSize": 1,
@@ -4023,12 +3656,14 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
+        "connection": "payInfos",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610442383165",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -4046,31 +3681,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 10001,
             "name": "",
-            "title": "",
-            "data": "付款合计",
+            "title": "商品原价合计",
+            "data": "{dishOriginalAmount}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{payAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4081,31 +3702,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 10005,
             "name": "",
-            "title": "",
-            "data": "找零",
+            "title": "原单应付金额",
+            "data": "{payAllAmount}",
             "param": "",
             "type": 1,
-            "percent": 50,
+            "percent": 100,
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{changeAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4113,12 +3720,13 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436729353",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -4136,257 +3744,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 10012,
             "name": "",
-            "title": "",
-            "data": "反结账原订单信息",
-            "param": "",
-            "type": 1,
-            "percent": 100,
-            "visible": "",
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "-原单原价合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{dishOriginalAmountReturn}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "-原单优惠合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{preferentialAllReturn}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "-原单附加费合计",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{additionAmountReturn}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "-原单四舍五入",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{roundingAmount}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "原单应付金额",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          },
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "{payAllAmountReturn}",
-            "param": "",
-            "type": 1,
-            "percent": 50,
-            "style": {
-              "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "",
-            "param": "-",
-            "type": 5,
-            "percent": 100,
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
-            "data": "反结账退货原因",
-            "param": "",
-            "type": 1,
-            "percent": 100,
-            "visible": "",
-            "style": {
-              "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "",
+            "title": "反结账退货原因：",
             "data": "{refundReasonRel}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4394,12 +3762,13 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436757726",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -4417,18 +3786,16 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 7006,
             "name": "",
-            "title": ":",
-            "data": "签字",
+            "title": "签字区",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 1,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4436,12 +3803,13 @@
       {
         "type": 1,
         "data": "",
+        "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": "separator_1610436761070",
             "name": "",
             "title": "",
-            "data": "",
+            "dat": "",
             "param": "-",
             "type": 5,
             "percent": 100,
@@ -4459,18 +3827,104 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 11001,
             "name": "",
-            "title": "操作员:",
+            "title": "自定义二维码",
+            "data": "{customCodePicture}",
+            "param": "",
+            "type": 2,
+            "percent": 100,
+            "style": {
+              "align": "2",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{customCodePicture}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610436839864",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 1004,
+            "name": "",
+            "title": "自定义图片",
+            "data": "{customPicture}",
+            "param": "{customMsg}",
+            "type": 4,
+            "percent": 100,
+            "style": {
+              "align": "2",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{customPicture}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 11003,
+            "name": "",
+            "title": "发票申请二维码",
+            "data": "{billPicture}",
+            "param": "",
+            "type": 2,
+            "percent": 100,
+            "style": {
+              "align": "2",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": "{billPicture}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 13001,
+            "name": "",
+            "title": "操作员：",
             "data": "{actor}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4481,18 +3935,17 @@
         "visible": "",
         "cells": [
           {
-            "id": 1,
+            "id": 13004,
             "name": "",
-            "title": "下单时间:",
+            "title": "开单时间：",
             "data": "{tableCreateTime}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
@@ -4501,45 +3954,19 @@
         "type": 1,
         "data": "",
         "visible": "",
-        "style": {
-          "spacing": 2
-        },
         "cells": [
           {
-            "id": 1,
+            "id": 13005,
             "name": "",
-            "title": "打印时间:",
+            "title": "打印时间：",
             "data": "{printTime}",
             "param": "",
             "type": 1,
             "percent": 100,
-            "visible": "",
             "style": {
               "align": 3,
-              "fontSize": 1,
-              "fontWeight": 1
-            }
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": 1,
-            "name": "",
-            "title": "欢迎下次光临",
-            "data": "",
-            "param": "",
-            "type": 1,
-            "percent": 100,
-            "visible": "",
-            "style": {
-              "align": 2,
-              "fontSize": 1,
-              "fontWeight": 1
+              "fontSize": "1",
+              "fontWeight": "1"
             }
           }
         ]
