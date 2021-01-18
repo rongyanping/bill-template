@@ -93,7 +93,7 @@ export default function UploadCell({
     width: `${newWidth}px`,
     height: newHeight ? `${newHeight}px` : 'auto',
   };
-  // console.log('upload=====' + buttonLabel, data, param);
+  // console.log('upload=====' + buttonLabel, data, param, type);
   return (
     <div className="upload-box" style={boxStyle}>
       {/* 上传自定义图片/二维码 */}
@@ -112,9 +112,9 @@ export default function UploadCell({
               {
                 type === 4 ? (
                   <img src={data} className="preview-img" />
-                ) : (
-                    <QRCode value={data} size={newWidth} />
-                  )
+                ) : (type == 2 || type == 3) ? (
+                  <QRCode value={data} size={newWidth} />
+                ) : null
               }
               {
                 !readOnly && <span className="overlayer"></span>

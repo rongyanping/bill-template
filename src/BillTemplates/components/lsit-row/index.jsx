@@ -20,9 +20,10 @@ export default function List({
   // 递归渲染列表结构
   function getChildNodes(row, mock) {
     function recursionChild(item, mockObj) {
-      if (item.type ===2 && item.childRows && item.childRows.length) {
+      // console.log('childRows=======' + item.data, item);
+      if (item.type === 2 && item.childRows && item.childRows.length) {
         const tempKey = getPlaceholderKeyStr(item.data);
-        return (mockObj[tempKey] && mockObj[tempKey].length ? mockObj[tempKey].map(mock => <div className="bill-template-list-row">{item.childRows.map(child => recursionChild(child, mock))}</div>): null)
+        return (mockObj[tempKey] && mockObj[tempKey].length ? mockObj[tempKey].map(mock => <div className="bill-template-list-row">{item.childRows.map(child => recursionChild(child, mock))}</div>) : null)
       }
       if (item.type === 1 && item.cells && item.cells.length) {
         return (
@@ -48,13 +49,13 @@ export default function List({
   // 获取多列的宽度占比
 
   // 设置整个结构内的cell的宽度，一列的为100%，多列的按调整后的比例赋值
-  
+
   useEffect(() => {
     const list = getChildNodes(data, renderDatas);
     setChildNodes(list);
   }, [data])
   return (
-  <div className="bill-template-list">
-    {childNodes}
-  </div>);
+    <div className="bill-template-list">
+      {childNodes}
+    </div>);
 }

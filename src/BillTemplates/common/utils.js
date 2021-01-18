@@ -10,7 +10,7 @@ export function formatCellStyle({
   fontWeight = 1,
 } = {}) {
   let style = {};
-  switch (align) {
+  switch (Number(align)) {
     case 1:
       style.align = 'left';
       break;
@@ -20,22 +20,28 @@ export function formatCellStyle({
     case 3:
       style.align = 'right';
       break;
+    default:
+      style.align = 'left';
   }
-  switch (fontWeight) {
+  switch (Number(fontWeight)) {
     case 1:
       style.fontWeight = 'normal';
       break;
     case 2:
       style.fontWeight = 'bold';
       break;
+    default:
+      style.fontWeight = 'normal';
   }
-  switch (fontSize) {
+  switch (Number(fontSize)) {
     case 1:
       style.fontSize = '12px';
       break;
     case 4:
       style.fontSize = '24px';
       break;
+    default:
+      style.fontSize = '12px';
   }
   return style;
 }
@@ -292,4 +298,69 @@ export function getListCells(block = []) {
   }
   loop(block);
   return res;
+}
+
+/**
+ * 读取excel中第一行的数据
+ * @param {*} wb  读取完成后的数据流
+ */
+export function getExcelFirstRow(wb) {
+  let wbData = wb.Sheets[wb.SheetNames[0]]; // 读取的excel单元格内容
+  let re = /^[A-Z]1$/; // 匹配excel第一行的内容
+  let arr1 = [];
+  for (let key in wbData) { // excel第一行内容赋值给数组
+    if (wbData.hasOwnProperty(key)) {
+      if (re.test(key)) {
+        arr1.push(wbData[key].h);
+      }
+    }
+  }
+  return arr1;
+}
+/**
+ * 将excel数据导出为组件的json数据
+ * @param {*} xlsxData  sheet_to_json后的数据
+ */
+export function getExcelToJsonData(xlsxData) {
+  const listArr = [];
+  let moduleObj = {};
+  let moduleCount = 0;
+  let componentArr = [];
+  let curModuleId = '';
+  console.log('xlsxData=======', xlsxData);
+  xlsxData.forEach((item) => {
+    if (item.moduleId && item.moduleId !== curModuleId) {
+      componentArr = [];
+    }
+    item.id && componentArr.push({
+      "id": item.id,
+      "moduleId": item.moduleId || curModuleId,
+      "label": item.label || '',
+      "value": "",
+      "labelStyle": "",
+      "valueStyle": item.valueStyle || '',
+      "type": item.type || 1,
+      "placeholder": item.placeholder || '',
+      "componentProperty": item.componentProperty || '',
+      "sort": item.sort || '1',
+      "row": 1,
+      "column": 1,
+      "width": Number(item.width) || 100
+    })
+
+    if (item.moduleId) {
+      moduleCount++;
+      curModuleId = item.moduleId;
+      moduleObj = {
+        "id": item.moduleId,
+        "name": item.moduleName,
+        "describe": "",
+        "sort": moduleCount,
+        "componentList": componentArr
+      }
+      listArr.push(moduleObj)
+    }
+
+  })
+  return listArr;
 }

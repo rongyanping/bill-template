@@ -28,468 +28,6 @@
     "payAllAmountReturn": "1.5",
     "memo": "随便备注下",
     "refundReasonRel": "想退你管我",
-    "middleCategories": [
-      {
-        "middleCategoryDishes": [
-          {
-            "dishActualAmount": "10.00",
-            "dishExtraList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加冰",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishLabelList": [
-              "爆款"
-            ],
-            "dishName": "可乐",
-            "dishOrderNum": 1,
-            "dishPracticeList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加辣",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishPrice": "10.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "10.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "30.00",
-            "dishName": "雪碧",
-            "dishOrderNum": 2,
-            "dishPrice": "15.00",
-            "dishQuantity": "2",
-            "dishTableCount": 0,
-            "dishTotalPrice": "30.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "120.00",
-            "dishName": "宫保鸡丁",
-            "dishOrderNum": 3,
-            "dishPrice": "30.00",
-            "dishQuantity": "4",
-            "dishTableCount": 0,
-            "dishTotalPrice": "120.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "60.00",
-            "dishCategoryBeanList": [
-              {
-                "middleCategoryDishes": [
-                  {
-                    "dishActualAmount": "60.00",
-                    "dishName": "宫保鸡丁",
-                    "dishOrderNum": 0,
-                    "dishPrice": "30.00",
-                    "dishQuantity": "2",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "60.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishExtraList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加冰",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPracticeList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加辣",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  }
-                ],
-                "middleCategoryName": "热菜",
-                "middleCategoryTotalPrice": "120.00",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishName": "肥牛套餐",
-            "dishOrderNum": 4,
-            "dishPrice": "30.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "60.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          }
-        ],
-        "middleCategoryName": "饮料",
-        "middleCategoryTotalPrice": "220.00",
-        "template": "",
-        "ticket": ""
-      }
-    ],
-    "original": [
-      {
-        "middleCategoryDishes": [
-          {
-            "dishActualAmount": "10.00",
-            "dishExtraList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加冰",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishLabelList": [
-              "爆款"
-            ],
-            "dishName": "可乐",
-            "dishOrderNum": 1,
-            "dishPracticeList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加辣",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishPrice": "10.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "10.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "30.00",
-            "dishName": "雪碧",
-            "dishOrderNum": 2,
-            "dishPrice": "15.00",
-            "dishQuantity": "2",
-            "dishTableCount": 0,
-            "dishTotalPrice": "30.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "120.00",
-            "dishName": "宫保鸡丁",
-            "dishOrderNum": 3,
-            "dishPrice": "30.00",
-            "dishQuantity": "4",
-            "dishTableCount": 0,
-            "dishTotalPrice": "120.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "60.00",
-            "dishCategoryBeanList": [
-              {
-                "middleCategoryDishes": [
-                  {
-                    "dishActualAmount": "60.00",
-                    "dishName": "宫保鸡丁",
-                    "dishOrderNum": 0,
-                    "dishPrice": "30.00",
-                    "dishQuantity": "2",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "60.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishExtraList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加冰",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPracticeList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加辣",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  }
-                ],
-                "middleCategoryName": "热菜",
-                "middleCategoryTotalPrice": "120.00",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishName": "肥牛套餐",
-            "dishOrderNum": 4,
-            "dishPrice": "30.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "60.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          }
-        ],
-        "middleCategoryName": "饮料",
-        "middleCategoryTotalPrice": "220.00",
-        "template": "",
-        "ticket": ""
-      }
-    ],
-    "refundCatagories": [
-      {
-        "middleCategoryDishes": [
-          {
-            "dishActualAmount": "10.00",
-            "dishExtraList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加冰",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishLabelList": [
-              "爆款"
-            ],
-            "dishName": "可乐",
-            "dishOrderNum": 1,
-            "dishPracticeList": [
-              {
-                "dishNameAndPriceAmount": "10.00",
-                "dishNameAndPriceName": "加辣",
-                "dishNameAndPricePrice": "10.00",
-                "dishNameAndPriceQuantity": "1",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishPrice": "10.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "10.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "30.00",
-            "dishName": "雪碧",
-            "dishOrderNum": 2,
-            "dishPrice": "15.00",
-            "dishQuantity": "2",
-            "dishTableCount": 0,
-            "dishTotalPrice": "30.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "120.00",
-            "dishName": "宫保鸡丁",
-            "dishOrderNum": 3,
-            "dishPrice": "30.00",
-            "dishQuantity": "4",
-            "dishTableCount": 0,
-            "dishTotalPrice": "120.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          },
-          {
-            "dishActualAmount": "60.00",
-            "dishCategoryBeanList": [
-              {
-                "middleCategoryDishes": [
-                  {
-                    "dishActualAmount": "60.00",
-                    "dishName": "宫保鸡丁",
-                    "dishOrderNum": 0,
-                    "dishPrice": "30.00",
-                    "dishQuantity": "2",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "60.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  },
-                  {
-                    "dishActualAmount": "30.00",
-                    "dishExtraList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加冰",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishName": "雪碧",
-                    "dishOrderNum": 0,
-                    "dishPracticeList": [
-                      {
-                        "dishNameAndPriceAmount": "10.00",
-                        "dishNameAndPriceName": "加辣",
-                        "dishNameAndPricePrice": "10.00",
-                        "dishNameAndPriceQuantity": "1",
-                        "template": "",
-                        "ticket": ""
-                      }
-                    ],
-                    "dishPrice": "15.00",
-                    "dishQuantity": "1",
-                    "dishTableCount": 0,
-                    "dishTotalPrice": "30.00",
-                    "groupMeal": false,
-                    "isGroupMeal": false,
-                    "template": "",
-                    "ticket": ""
-                  }
-                ],
-                "middleCategoryName": "热菜",
-                "middleCategoryTotalPrice": "120.00",
-                "template": "",
-                "ticket": ""
-              }
-            ],
-            "dishName": "肥牛套餐",
-            "dishOrderNum": 4,
-            "dishPrice": "30.00",
-            "dishQuantity": "1",
-            "dishTableCount": 0,
-            "dishTotalPrice": "60.00",
-            "groupMeal": false,
-            "isGroupMeal": false,
-            "template": "",
-            "ticket": ""
-          }
-        ],
-        "middleCategoryName": "饮料",
-        "middleCategoryTotalPrice": "220.00",
-        "template": "",
-        "ticket": ""
-      }
-    ],
     "operationTime": "2020-12-15 12:22:00",
     "payAllAmount": "0.00",
     "payAmount": "0.00",
@@ -515,7 +53,7 @@
         "payDiscountAmount": "1.00"
       }
     ],
-    "peopleCount": "123",
+    "peopleCount": "100",
     "preferentialAll": "0.00",
     "printTime": "2020-12-28 13:42:34",
     "privilegeTypes": [
@@ -565,7 +103,7 @@
     "tableOrNumberPlatevalue": "A001",
     "template": "",
     "ticket": "",
-    "ticketName": "堂口单",
+    "ticketName": "消费清单(结账单)",
     "tradeOrderDevice": "KPOS",
     "tradeOrderNumber": "121321331",
     "customMsg": "自定义图片文案",
@@ -582,26 +120,377 @@
     "shopPhone": "13888888888",
     "shopInfo": "商户信息",
     "dishOriginalAmountReturn": "1.00",
-    "receiverName": "张三",
-    "receiverPhone": "15988888888",
-    "deliveryAddress": "收货人地址",
-    "jdQrCodeContentValue": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "orderQrCodeContentValue": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "qrCodeContentValue": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "commentCodePicture": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "orderQrCodeKContentValue": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "sFCodeValue": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
-    "deliveryTime": "2020-12-07 12:20:01",
-    "barcodeFoodReady": "https://img-static.keruyun.com/52132dd19b2c43bb8d8589c85fbba53c.png",
-    "qrCodeContentLabel": "On-mobile配送二维码",
     "middleCategoryTotalPrice": 123,
+    "middleCategories": [
+      {
+        "middleCategoryDishes": [
+          {
+            "dishActualAmount": "10.00",
+            "dishExtraList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加冰",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishLabelList": [
+              "爆款"
+            ],
+            "dishName": "可乐",
+            "dishOrderNum": 1,
+            "dishPracticeList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加辣",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishNameSecondLanguage": "coke",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "dishPrice": "10.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "10.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "ticket": ""
+          },
+          {
+            "dishActualAmount": "30.00",
+            "dishName": "雪碧",
+            "dishOrderNum": 2,
+            "dishPrice": "15.00",
+            "dishQuantity": "2",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "ticket": "",
+            "dishNameSecondLanguage": "sprite",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09"
+          },
+          {
+            "dishActualAmount": "120.00",
+            "dishName": "宫保鸡丁",
+            "dishOrderNum": 3,
+            "dishPrice": "30.00",
+            "dishQuantity": "4",
+            "dishTableCount": 0,
+            "dishTotalPrice": "120.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "dishNameSecondLanguage": "English name",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "ticket": ""
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishCategoryBeanList": [
+              {
+                "middleCategoryDishes": [
+                  {
+                    "dishActualAmount": "60.00",
+                    "dishName": "宫保鸡丁",
+                    "dishOrderNum": 0,
+                    "dishPrice": "30.00",
+                    "dishQuantity": "2",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "60.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "English name",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "sprite",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishExtraList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加冰",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1",
+                        "template": "",
+                        "ticket": ""
+                      }
+                    ],
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPracticeList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加辣",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1",
+                        "template": "",
+                        "ticket": ""
+                      }
+                    ],
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "sprite",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  }
+                ],
+                "middleCategoryName": "热菜",
+                "middleCategoryTotalPrice": "120.00",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishName": "肥牛套餐",
+            "dishOrderNum": 4,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "60.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "dishNameSecondLanguage": "feiniu",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "ticket": ""
+          }
+        ],
+        "middleCategoryName": "饮料",
+        "middleCategoryTotalPrice": "220.00",
+        "template": "",
+        "ticket": ""
+      }
+    ],
+    "original": [
+      {
+        "middleCategoryDishes": [
+          {
+            "dishActualAmount": "10.00",
+            "dishExtraList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加冰",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishLabelList": [
+              "爆款"
+            ],
+            "dishName": "可乐",
+            "dishOrderNum": 1,
+            "dishPracticeList": [
+              {
+                "dishNameAndPriceAmount": "10.00",
+                "dishNameAndPriceName": "加辣",
+                "dishNameAndPricePrice": "10.00",
+                "dishNameAndPriceQuantity": "1",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishNameSecondLanguage": "coke",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "dishPrice": "10.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "10.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "ticket": ""
+          },
+          {
+            "dishActualAmount": "30.00",
+            "dishName": "雪碧",
+            "dishOrderNum": 2,
+            "dishPrice": "15.00",
+            "dishQuantity": "2",
+            "dishTableCount": 0,
+            "dishTotalPrice": "30.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "ticket": "",
+            "dishNameSecondLanguage": "sprite",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09"
+          },
+          {
+            "dishActualAmount": "120.00",
+            "dishName": "[退]宫保鸡丁",
+            "dishOrderNum": 3,
+            "dishPrice": "30.00",
+            "dishQuantity": "4",
+            "dishTableCount": 0,
+            "dishTotalPrice": "120.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "dishNameSecondLanguage": "English name",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "ticket": ""
+          },
+          {
+            "dishActualAmount": "60.00",
+            "dishCategoryBeanList": [
+              {
+                "middleCategoryDishes": [
+                  {
+                    "dishActualAmount": "60.00",
+                    "dishName": "宫保鸡丁",
+                    "dishOrderNum": 0,
+                    "dishPrice": "30.00",
+                    "dishQuantity": "2",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "60.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "English name",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "sprite",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  },
+                  {
+                    "dishActualAmount": "30.00",
+                    "dishExtraList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加冰",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1",
+                        "template": "",
+                        "ticket": ""
+                      }
+                    ],
+                    "dishName": "雪碧",
+                    "dishOrderNum": 0,
+                    "dishPracticeList": [
+                      {
+                        "dishNameAndPriceAmount": "10.00",
+                        "dishNameAndPriceName": "加辣",
+                        "dishNameAndPricePrice": "10.00",
+                        "dishNameAndPriceQuantity": "1",
+                        "template": "",
+                        "ticket": ""
+                      }
+                    ],
+                    "dishPrice": "15.00",
+                    "dishQuantity": "1",
+                    "dishTableCount": 0,
+                    "dishTotalPrice": "30.00",
+                    "groupMeal": false,
+                    "isGroupMeal": false,
+                    "template": "",
+                    "dishNameSecondLanguage": "sprite",
+                    "dishRefundReason": "不是冰的",
+                    "dishMemo": "备注不要葱",
+                    "dishSeat": "A09",
+                    "ticket": ""
+                  }
+                ],
+                "middleCategoryName": "热菜",
+                "middleCategoryTotalPrice": "120.00",
+                "template": "",
+                "ticket": ""
+              }
+            ],
+            "dishName": "[退]肥牛套餐",
+            "dishOrderNum": 4,
+            "dishPrice": "30.00",
+            "dishQuantity": "1",
+            "dishTableCount": 0,
+            "dishTotalPrice": "60.00",
+            "groupMeal": false,
+            "isGroupMeal": false,
+            "template": "",
+            "dishNameSecondLanguage": "feiniu",
+            "dishRefundReason": "不是冰的",
+            "dishMemo": "备注不要葱",
+            "dishSeat": "A09",
+            "ticket": ""
+          }
+        ],
+        "middleCategoryName": "饮料",
+        "middleCategoryTotalPrice": "220.00",
+        "template": "",
+        "ticket": ""
+      }
+    ],
     "customCodeMsg": "自定义文案",
     "commentCodeMsg": "请扫码对菜品和服务进行评价",
     "publicCodeMsg": "请扫码打开公众号",
     "billMsg": "电子发票二维码",
-    "refundOrCancelReason": "这菜退掉，不要了",
-    "customerFlag": "【新】",
-    "dishRefundReason": "作废了"
+    "qrCodeContentLabel": "mobile配送二维码",
+    "refundOrCancelReason": "这菜退掉，不要了"
   },
   "modulesList": [
     {
@@ -897,7 +786,7 @@
           "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
           "type": 1,
           "placeholder": "{middleCategoryTotalPrice}",
-          "componentProperty": "{\"visible\":\"{middleCategoryTotalPrice}0\",\"connection\":\"middleCategories\"}",
+          "componentProperty": "{\"visible\":\"{middleCategoryTotalPrice}0\"}",
           "sort": 3,
           "row": 1,
           "column": 1,
@@ -1071,10 +960,222 @@
       ]
     },
     {
+      "id": 3,
+      "name": "优惠活动",
+      "describe": "",
+      "sort": 3,
+      "componentList": [
+        {
+          "id": "3001",
+          "moduleId": 3,
+          "label": "优惠活动",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{privilegeTypes}0\",\"rowType\":2,\"connection\":\"privilegeTypes\",\"json\":[{\"type\":2,\"data\":\"{privilegeTypes}\",\"connection\":\"privilegeTypes\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":3001,\"name\":\"\",\"title\":\"\",\"data\":\"{privilegeTypeName}\",\"param\":\"\",\"type\":1,\"percent\":100,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":2,\"data\":\"{privilegeBeanList}\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":3001,\"name\":\"\",\"title\":\"\",\"data\":\"{privilegeName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":3001,\"name\":\"\",\"title\":\"\",\"data\":\"{privilegeAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}]}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 70
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "附加费信息",
+      "describe": "",
+      "sort": 4,
+      "componentList": [
+        {
+          "id": "4001",
+          "moduleId": 4,
+          "label": "附加费",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{additions}0\",\"rowType\":2,\"connection\": \"additions\",\"json\":[{\"type\":2,\"data\":\"{additions}\",\"connection\":\"additions\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":33,\"name\":\"\",\"title\":\"\",\"data\":\"{attachName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":33,\"name\":\"\",\"title\":\"\",\"data\":\"{attachAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 70
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "结算信息",
+      "describe": "",
+      "sort": 5,
+      "componentList": [
+        {
+          "id": "5001",
+          "moduleId": 5,
+          "label": "商品原价合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{dishOriginalAmount}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "5002",
+          "moduleId": 5,
+          "label": "优惠合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{preferentialAll}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 2,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "5003",
+          "moduleId": 5,
+          "label": "附加费合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{additionAmount}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "5004",
+          "moduleId": 5,
+          "label": "四舍五入",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{roundingAllAmount}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "支付信息",
+      "describe": "",
+      "sort": 6,
+      "componentList": [
+        {
+          "id": "7001",
+          "moduleId": 7,
+          "label": "支付优惠",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{paymentDiscounts}0\",\"rowType\":2,\"connection\": \"paymentDiscounts\",\"json\":[{\"type\":2,\"data\":\"{paymentDiscounts}\",\"connection\":\"paymentDiscounts\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":41,\"name\":\"\",\"title\":\"\",\"data\":\"{payDiscountName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":41,\"name\":\"\",\"title\":\"\",\"data\":\"{payDiscountAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7002",
+          "moduleId": 7,
+          "label": "实付汇总",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{realPayAmount}",
+          "componentProperty": "{\"visible\":\"{realPayAmount}0\",\"twoCell\":true}",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7003",
+          "moduleId": 7,
+          "label": "支付方式",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{payInfos}0\",\"rowType\":2,\"connection\": \"payInfos\",\"json\":[{\"type\":2,\"data\":\"{payInfos}\",\"connection\":\"payInfos\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":43,\"name\":\"\",\"title\":\"\",\"data\":\"{payInfoName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":43,\"name\":\"\",\"title\":\"\",\"data\":\"{payInfoAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 70
+        },
+        {
+          "id": "7004",
+          "moduleId": 7,
+          "label": "找零",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{changeAmount}",
+          "componentProperty": "{\"visible\":\"{changeAmount}0\",\"twoCell\":true}",
+          "sort": 6,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7005",
+          "moduleId": 7,
+          "label": "现金实收",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{customerRealPayAmount}",
+          "componentProperty": "{\"visible\":\"{customerRealPayAmount}0\",\"twoCell\":true}",
+          "sort": 7,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7006",
+          "moduleId": 7,
+          "label": "签字区",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "",
+          "sort": 8,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
       "id": 9,
       "name": "退货信息",
       "describe": "",
-      "sort": 3,
+      "sort": 7,
       "componentList": [
         {
           "id": "9001",
@@ -1100,7 +1201,7 @@
           "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
           "type": 1,
           "placeholder": "{middleCategoryTotalPrice}",
-          "componentProperty": "{\"visible\":\"{cmiddleCategoryTotalPrice}0\",\"connection\":\"original\"}",
+          "componentProperty": "{\"visible\":\"{cmiddleCategoryTotalPrice}0\"}",
           "sort": 3,
           "row": 1,
           "column": 1,
@@ -1270,18 +1371,154 @@
           "row": 1,
           "column": 1,
           "width": 100
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "反结账信息",
+      "describe": "",
+      "sort": 8,
+      "componentList": [
+        {
+          "id": "10001",
+          "moduleId": 10,
+          "label": "原单原价合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{dishOriginalAmountReturn}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
         },
         {
-          "id": "11008",
-          "moduleId": 9,
-          "label": "出餐条形码",
+          "id": "10002",
+          "moduleId": 10,
+          "label": "原单优惠合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{preferentialAllReturn}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 2,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "10003",
+          "moduleId": 10,
+          "label": "原单附加费合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{additionAmountReturn}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "10004",
+          "moduleId": 10,
+          "label": "原单四舍五入",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{payAllAmountReturn}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "10005",
+          "moduleId": 10,
+          "label": "原单应付金额",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{dishOriginalAmount}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 5,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "10012",
+          "moduleId": 10,
+          "label": "反结账退货原因：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{refundReasonRel}",
+          "componentProperty": "",
+          "sort": 12,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "二维码",
+      "describe": "",
+      "sort": 9,
+      "componentList": [
+        {
+          "id": "11001",
+          "moduleId": 11,
+          "label": "自定义二维码",
           "value": "",
           "labelStyle": "",
           "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
-          "type": 3,
-          "placeholder": "{barcodeFoodReady}",
-          "componentProperty": "{\"visible\":\"{barcodeFoodReady}0\"}",
-          "sort": 8,
+          "type": 2,
+          "placeholder": "{customCodePicture}",
+          "componentProperty": "{\"visible\":\"{customCodePicture}0\",\"buttonLabel\":\"上传自定义二维码\"}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "11002",
+          "moduleId": 11,
+          "label": "点评二维码",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 2,
+          "placeholder": "{commentCodePicture}",
+          "componentProperty": "{\"visible\":\"{commentCodePicture}0\",\"readOnly\": true}",
+          "sort": 2,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "11003",
+          "moduleId": 11,
+          "label": "发票申请二维码",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 2,
+          "placeholder": "{billPicture}",
+          "componentProperty": "{\"visible\":\"{billPicture}0\",\"readOnly\": true}",
+          "sort": 3,
           "row": 1,
           "column": 1,
           "width": 100
@@ -1292,7 +1529,7 @@
       "id": 13,
       "name": "底栏信息",
       "describe": "",
-      "sort": 4,
+      "sort": 10,
       "componentList": [
         {
           "id": "13001",
@@ -1448,7 +1685,51 @@
         "visible": "",
         "cells": [
           {
-            "id": "separator_1610711661902",
+            "id": "1018",
+            "name": "",
+            "title": "品牌logo",
+            "data": "{shopLogo}",
+            "param": "",
+            "type": 4,
+            "percent": 100,
+            "style": {
+              "align": 2,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{shopLogo}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "1001",
+            "name": "",
+            "title": "{shopName}",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 2,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{ticketName}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610681574880",
             "name": "",
             "title": "",
             "dat": "",
@@ -1482,27 +1763,6 @@
               "fontWeight": 1
             },
             "visible": null
-          }
-        ]
-      },
-      {
-        "type": 1,
-        "data": "",
-        "visible": "",
-        "cells": [
-          {
-            "id": "1005",
-            "name": "",
-            "title": "",
-            "data": "{tableOrNumberPlateName}:{tableOrNumberPlatevalue}",
-            "param": "",
-            "type": 1,
-            "percent": 100,
-            "style": {
-              "align": 1,
-              "fontSize": 4,
-              "fontWeight": 1
-            }
           }
         ]
       },
@@ -1555,7 +1815,52 @@
         "visible": "",
         "cells": [
           {
-            "id": "separator_1610712292434",
+            "id": "1009",
+            "name": "",
+            "title": "顾客/会员:",
+            "data": "{memberName} {customerPhone}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{memberName}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "1012",
+            "name": "",
+            "title": "订单号：",
+            "data": "{tradeOrderNumber}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": null,
+        "cells": [
+          {
+            "id": "separator_1610681655543",
             "name": "",
             "title": "",
             "dat": "",
@@ -1899,7 +2204,67 @@
         "visible": "",
         "cells": [
           {
-            "id": "2010",
+            "id": "9013",
+            "name": "",
+            "title": "应付合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{payAllAmount}0"
+          },
+          {
+            "id": "9013",
+            "name": "",
+            "title": "",
+            "data": "{payAllAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{payAllAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610681711594",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "9010",
             "name": "",
             "title": "整单备注：",
             "data": "{memo}",
@@ -1921,7 +2286,165 @@
         "visible": "",
         "cells": [
           {
-            "id": "separator_1610711810015",
+            "id": "separator_1610681721606",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{privilegeTypes}",
+        "connection": "privilegeTypes",
+        "visible": "",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 3001,
+                "name": "",
+                "title": "",
+                "data": "{privilegeTypeName}",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{privilegeBeanList}",
+            "visible": "",
+            "childRows": [
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 3001,
+                    "name": "",
+                    "title": "",
+                    "data": "{privilegeName}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 70,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 3001,
+                    "name": "",
+                    "title": "",
+                    "data": "{privilegeAmount}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 30,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": "privilegeTypes",
+        "cells": [
+          {
+            "id": "separator_1610697888792",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{additions}",
+        "connection": "additions",
+        "visible": "",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 33,
+                "name": "",
+                "title": "",
+                "data": "{attachName}",
+                "param": "",
+                "type": 1,
+                "percent": 70,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 33,
+                "name": "",
+                "title": "",
+                "data": "{attachAmount}",
+                "param": "",
+                "type": 1,
+                "percent": 30,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": "additions",
+        "cells": [
+          {
+            "id": "separator_1610681814658",
             "name": "",
             "title": "",
             "dat": "",
@@ -1942,19 +2465,34 @@
         "visible": "",
         "cells": [
           {
-            "id": "2011",
+            "id": "5001",
             "name": "",
-            "title": "退菜原因：",
-            "data": "{dishRefundReason}",
+            "title": "商品原价合计",
+            "data": "",
             "param": "",
             "type": 1,
-            "percent": 100,
+            "percent": 70,
+            "noDragOut": true,
             "style": {
               "align": 1,
               "fontSize": 1,
               "fontWeight": 1
-            },
-            "visible": "{dishRefundReason}0"
+            }
+          },
+          {
+            "id": "5001",
+            "name": "",
+            "title": "",
+            "data": "{dishOriginalAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
           }
         ]
       },
@@ -1964,7 +2502,816 @@
         "visible": "",
         "cells": [
           {
-            "id": "separator_1610875344563",
+            "id": "5002",
+            "name": "",
+            "title": "优惠合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "5002",
+            "name": "",
+            "title": "",
+            "data": "{preferentialAll}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "5003",
+            "name": "",
+            "title": "附加费合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "5003",
+            "name": "",
+            "title": "",
+            "data": "{additionAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "5004",
+            "name": "",
+            "title": "四舍五入",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "5004",
+            "name": "",
+            "title": "",
+            "data": "{roundingAllAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610688986746",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "2014",
+            "name": "",
+            "title": "应付金额",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{payAllAmount}0"
+          },
+          {
+            "id": "2014",
+            "name": "",
+            "title": "",
+            "data": "{payAllAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{payAllAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610688995923",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "5005",
+            "name": "",
+            "title": "抹零",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 50,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{quiteZero}0"
+          },
+          {
+            "id": "5005",
+            "name": "",
+            "title": "",
+            "data": "{quiteZero}",
+            "param": "",
+            "type": 1,
+            "percent": 50,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{quiteZero}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "5006",
+            "name": "",
+            "title": "溢收",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 50,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{extraAmount}0"
+          },
+          {
+            "id": "5006",
+            "name": "",
+            "title": "",
+            "data": "{extraAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 50,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{extraAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610798327491",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "7005",
+            "name": "",
+            "title": "商家实收",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{customerRealPayAmount}0"
+          },
+          {
+            "id": "7005",
+            "name": "",
+            "title": "",
+            "data": "{customerRealPayAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{customerRealPayAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610693613677",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{payInfos}",
+        "connection": "payInfos",
+        "visible": "",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 43,
+                "name": "",
+                "title": "",
+                "data": "{payInfoName}",
+                "param": "",
+                "type": 1,
+                "percent": 70,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 43,
+                "name": "",
+                "title": "",
+                "data": "{payInfoAmount}",
+                "param": "",
+                "type": 1,
+                "percent": 30,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": "payInfos",
+        "cells": [
+          {
+            "id": "separator_1610689086296",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "7002",
+            "name": "",
+            "title": "付款合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{realPayAmount}0"
+          },
+          {
+            "id": "7002",
+            "name": "",
+            "title": "",
+            "data": "{realPayAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{realPayAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "7004",
+            "name": "",
+            "title": "找零",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{changeAmount}0"
+          },
+          {
+            "id": "7004",
+            "name": "",
+            "title": "",
+            "data": "{changeAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{changeAmount}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610693599692",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "1019",
+            "name": "",
+            "title": "",
+            "data": "反结账原订单信息",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10001",
+            "name": "",
+            "title": "原单原价合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "10001",
+            "name": "",
+            "title": "",
+            "data": "{dishOriginalAmountReturn}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10002",
+            "name": "",
+            "title": "原单优惠合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "10002",
+            "name": "",
+            "title": "",
+            "data": "{preferentialAllReturn}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10003",
+            "name": "",
+            "title": "原单附加费合计",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "10003",
+            "name": "",
+            "title": "",
+            "data": "{additionAmountReturn}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10004",
+            "name": "",
+            "title": "原单四舍五入",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "10004",
+            "name": "",
+            "title": "",
+            "data": "{payAllAmountReturn}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10005",
+            "name": "",
+            "title": "原单应付金额",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "10005",
+            "name": "",
+            "title": "",
+            "data": "{dishOriginalAmount}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610797076958",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "10012",
+            "name": "",
+            "title": "反结账退货原因：",
+            "data": "{refundReasonRel}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": null,
+        "cells": [
+          {
+            "id": "separator_1610681850668",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "7006",
+            "name": "",
+            "title": "签字区",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": null,
+        "cells": [
+          {
+            "id": "separator_1610681876537",
             "name": "",
             "title": "",
             "dat": "",

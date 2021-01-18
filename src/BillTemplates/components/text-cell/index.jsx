@@ -55,6 +55,7 @@ export default function TextCell({
     default:
       return false;
   }
+  // console.log('text====937--', data);
   return (
     <div className="text-box" style={boxStyle}>
       {renderContent ? renderContent.replace(/\s/g, String.fromCharCode(8194)) : null}

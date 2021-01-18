@@ -1,0 +1,1396 @@
+{
+  "id": "435866577799063552",
+  "name": "测试模板1",
+  "documentType": 101,
+  "baseTemplate": 100001,
+  "url": "这是一个URL",
+  "defaultTemplate": 0,
+  "enableFlag": 2,
+  "brandIdenty": 1234567,
+  "shopIdenty": 7654321,
+  "demoObject": {
+    "actor": "222",
+    "deviceNumber": "001",
+    "endTime": "2021/01/13 14:00:54",
+    "handoverSubmitDetails": [
+      {
+        "diffFee": "1.00",
+        "handoverDevices": [
+          {
+            "accountSubjectFee": "1.00",
+            "bookingFee": "1.00",
+            "deviceName": "当前pos机",
+            "marketingFee": "1.00",
+            "saleFee": "1.00",
+            "template": "",
+            "ticket": ""
+          },
+          {
+            "accountSubjectFee": "1.00",
+            "bookingFee": "1.00",
+            "deviceName": "自助设备",
+            "marketingFee": "1.00",
+            "saleFee": "1.00",
+            "template": "",
+            "ticket": ""
+          }
+        ],
+        "handoverFee": "1.00",
+        "payCount": 2,
+        "payModeName": "现金收款",
+        "refundCount": 1,
+        "template": "",
+        "ticket": ""
+      },
+      {
+        "diffFee": "1.00",
+        "handoverDevices": [
+          {
+            "accountSubjectFee": "1.00",
+            "bookingFee": "1.00",
+            "deviceName": "当前pos机",
+            "marketingFee": "1.00",
+            "saleFee": "1.00",
+            "template": "",
+            "ticket": ""
+          },
+          {
+            "accountSubjectFee": "1.00",
+            "bookingFee": "1.00",
+            "deviceName": "自助设备",
+            "marketingFee": "1.00",
+            "saleFee": "1.00",
+            "template": "",
+            "ticket": ""
+          }
+        ],
+        "handoverFee": "1.00",
+        "payCount": 2,
+        "payModeName": "支付宝收款",
+        "refundCount": 1,
+        "template": "",
+        "ticket": ""
+      }
+    ],
+    "operationTime": "2021/01/13 14:00:54",
+    "operatorName": "测试",
+    "payTotalChangeFee": "1.00",
+    "payTotalCount": "1",
+    "printTime": "2021/01/13 14:01:09",
+    "reserveFee": "1.00",
+    "returnCount": "1",
+    "shopAddress": "四川省成都市金牛区",
+    "shopIdenty": "816664273",
+    "shopName": "QS20201",
+    "shopPhone": "13808184544",
+    "startTime": "2021/01/13 14:00:54",
+    "template": "",
+    "ticket": "",
+    "ticketName": "交接单(交班)",
+    "totalFee": "1.00",
+    "shopLogo": "logo",
+    "brandName": "品牌名称",
+    "tableOrNumberPlateName": "取餐号",
+    "tableOrNumberPlatevalue": "A001",
+    "customerPhone": "133***345",
+    "memberName": "魏xx",
+    "tradeOrderNumber": "121321331",
+    "otherNumber": "001",
+    "batchNumber": "001",
+    "billNumber": "20210114",
+    "taxNumber": "440300761961869",
+    "additionAmount": "0.00",
+    "changeAmount": "0.00",
+    "currencySymbol": "¥",
+    "customerRealPayAmount": "0.00",
+    "dinnerType": "堂食",
+    "dishOriginalAmount": "-0.5",
+    "extraAmount": "0.00",
+    "goodsTotalAmount": "0",
+    "goodsTotalPrice": "0.00",
+    "memberPayment": "0.00",
+    "preferentialAllReturn": "1.5",
+    "additionAmountReturn": "1.5",
+    "roundingAmount": "0.00",
+    "payAllAmountReturn": "1.5",
+    "memo": "随便备注下",
+    "refundReasonRel": "想退你管我",
+    "payAllAmount": "0.00",
+    "payAmount": "0.00",
+    "payInfos": [
+      {
+        "payInfoAmount": "0.00",
+        "payInfoCurrencySymbol": "¥",
+        "payInfoName": "现金",
+        "template": "",
+        "ticket": ""
+      },
+      {
+        "payInfoAmount": "0.00",
+        "payInfoCurrencySymbol": "¥",
+        "payInfoName": "银行卡",
+        "template": "",
+        "ticket": ""
+      }
+    ],
+    "paymentDiscounts": [
+      {
+        "payDiscountName": "支付优惠1",
+        "payDiscountAmount": "1.00"
+      }
+    ],
+    "peopleCount": "A001",
+    "preferentialAll": "0.00",
+    "privilegeTypes": [
+      {
+        "privilegeBeanList": [
+          {
+            "privilegeAmount": "9.00",
+            "privilegeMarketUuid": "001",
+            "privilegeName": "整单五折",
+            "template": "",
+            "ticket": ""
+          },
+          {
+            "privilegeAmount": "11.00",
+            "privilegeMarketUuid": "002",
+            "privilegeName": "整单八折",
+            "template": "",
+            "ticket": ""
+          }
+        ],
+        "privilegeTypeName": "整单优惠"
+      }
+    ],
+    "additions": [
+      {
+        "attachName": "服务费",
+        "attachAmount": "4.00"
+      },
+      {
+        "attachName": "配送费",
+        "attachAmount": "6.00"
+      },
+      {
+        "attachName": "餐盒费",
+        "attachAmount": "1.00"
+      }
+    ],
+    "quiteZero": "0.00",
+    "realPayAmount": "0.00",
+    "serialNumber": "A001",
+    "storeCardBefore": "0.00",
+    "storeCardRemain": "0.00",
+    "tableCreateTime": "2020-12-07 12:00:01",
+    "tradeOrderDevice": "KPOS",
+    "customMsg": "自定义图片文案",
+    "billPicture": "https://img-static.keruyun.com/164f87f383d4434ea1018ee2f44d1b22.png",
+    "userName": "收银员1",
+    "waiter": "服务员1",
+    "shopInfo": "商户信息",
+    "dishOriginalAmountReturn": "1.00",
+    "middleCategoryTotalPrice": 123,
+    "customCodeMsg": "自定义文案",
+    "commentCodeMsg": "请扫码对菜品和服务进行评价",
+    "publicCodeMsg": "请扫码打开公众号",
+    "billMsg": "电子发票二维码",
+    "qrCodeContentLabel": "mobile配送二维码",
+    "refundOrCancelReason": "这菜退掉，不要了"
+  },
+  "modulesList": [
+    {
+      "id": 1,
+      "name": "基础信息",
+      "describe": "",
+      "sort": 1,
+      "componentList": [
+        {
+          "id": "1001",
+          "moduleId": 1,
+          "label": "门店名称：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{shopName}",
+          "componentProperty": "{\"visible\":\"{ticketName}0\",\"titlePlaceholder\":\"{shopName}\"}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1002",
+          "moduleId": 1,
+          "label": "门店ID",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{shopIdenty}",
+          "componentProperty": "",
+          "sort": 2,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1003",
+          "moduleId": 1,
+          "label": "品牌名称",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{brandName}",
+          "componentProperty": "",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1004",
+          "moduleId": 1,
+          "label": "自定义图片",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 4,
+          "placeholder": "{customPicture}",
+          "componentProperty": "{\"visible\":\"{customPicture}0\", \"param\":\"{customMsg}\",\"buttonLabel\":\"上传自定义图片\"}",
+          "sort": 5,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1005",
+          "moduleId": 1,
+          "label": "号牌数",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{tableOrNumberPlateName}:{tableOrNumberPlatevalue}",
+          "componentProperty": "",
+          "sort": 6,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1006",
+          "moduleId": 1,
+          "label": "用餐方式及订单来源",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"titlePlaceholder\":\"{dinnerType}-{tradeOrderDevice}\"}",
+          "sort": 7,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1008",
+          "moduleId": 1,
+          "label": "人数：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{peopleCount}",
+          "componentProperty": "",
+          "sort": 9,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1009",
+          "moduleId": 1,
+          "label": "顾客/会员：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{memberName} {customerPhone}",
+          "componentProperty": "{\"visible\":\"{memberName}0\"}",
+          "sort": 10,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1012",
+          "moduleId": 1,
+          "label": "订单号：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{tradeOrderNumber}",
+          "componentProperty": "",
+          "sort": 13,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1013",
+          "moduleId": 1,
+          "label": "流水号：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{serialNumber}",
+          "componentProperty": "",
+          "sort": 14,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1014",
+          "moduleId": 1,
+          "label": "第三方流水号：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{otherNumber}",
+          "componentProperty": "",
+          "sort": 15,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1015",
+          "moduleId": 1,
+          "label": "出单序号",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{batchNumber}",
+          "componentProperty": "",
+          "sort": 16,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1016",
+          "moduleId": 1,
+          "label": "发票号：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{billNumber}",
+          "componentProperty": "",
+          "sort": 17,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1017",
+          "moduleId": 1,
+          "label": "税号：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{taxNumber}",
+          "componentProperty": "",
+          "sort": 18,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1018",
+          "moduleId": 1,
+          "label": "品牌logo",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 4,
+          "placeholder": "{shopLogo}",
+          "componentProperty": "{\"visible\":\"{shopLogo}0\", \"buttonLabel\":\"上传门店图片\"}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1019",
+          "moduleId": 1,
+          "label": "自定义文字",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "",
+          "sort": 19,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "1020",
+          "moduleId": 1,
+          "label": "票据名称",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"4\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{ticketName}0\",\"titlePlaceholder\":\"{ticketState}{ticketName}\"}",
+          "sort": 20,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "支付信息",
+      "describe": "",
+      "sort": 2,
+      "componentList": [
+        {
+          "id": "7001",
+          "moduleId": 7,
+          "label": "支付优惠",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{paymentDiscounts}0\",\"rowType\":2,\"connection\": \"paymentDiscounts\",\"json\":[{\"type\":2,\"data\":\"{paymentDiscounts}\",\"connection\":\"paymentDiscounts\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":41,\"name\":\"\",\"title\":\"\",\"data\":\"{payDiscountName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":41,\"name\":\"\",\"title\":\"\",\"data\":\"{payDiscountAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7002",
+          "moduleId": 7,
+          "label": "实付汇总",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{realPayAmount}",
+          "componentProperty": "{\"visible\":\"{realPayAmount}0\",\"twoCell\":true}",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7003",
+          "moduleId": 7,
+          "label": "支付方式",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"visible\":\"{payInfos}0\",\"rowType\":2,\"connection\": \"payInfos\",\"json\":[{\"type\":2,\"data\":\"{payInfos}\",\"connection\":\"payInfos\",\"visible\":\"\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":43,\"name\":\"\",\"title\":\"\",\"data\":\"{payInfoName}\",\"param\":\"\",\"type\":1,\"percent\":70,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":43,\"name\":\"\",\"title\":\"\",\"data\":\"{payInfoAmount}\",\"param\":\"\",\"type\":1,\"percent\":30,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 70
+        },
+        {
+          "id": "7004",
+          "moduleId": 7,
+          "label": "找零",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{changeAmount}",
+          "componentProperty": "{\"visible\":\"{changeAmount}0\",\"twoCell\":true}",
+          "sort": 6,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7005",
+          "moduleId": 7,
+          "label": "现金实收",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{customerRealPayAmount}",
+          "componentProperty": "{\"visible\":\"{customerRealPayAmount}0\",\"twoCell\":true}",
+          "sort": 7,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "7006",
+          "moduleId": 7,
+          "label": "签字区",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "",
+          "sort": 8,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "交接单信息",
+      "describe": "",
+      "sort": 3,
+      "componentList": [
+        {
+          "id": "14001",
+          "moduleId": 14,
+          "label": "设备编号",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{deviceNumber}",
+          "componentProperty": "",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14004",
+          "moduleId": 14,
+          "label": "交接人:",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{operatorName}",
+          "componentProperty": "{\"visible\":\"{operatorName}0\"}",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14005",
+          "moduleId": 14,
+          "label": "交接开始时间",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{startTime}",
+          "componentProperty": "",
+          "sort": 5,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14006",
+          "moduleId": 14,
+          "label": "交接结束时间",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{endTime}",
+          "componentProperty": "",
+          "sort": 6,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14007",
+          "moduleId": 14,
+          "label": "备用金",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"1\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{reserveFee}",
+          "componentProperty": "{\"twoCell\":true}",
+          "sort": 7,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14008",
+          "moduleId": 14,
+          "label": "收支合计",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 1,
+          "placeholder": "",
+          "componentProperty": "{\"connection\":\"收支合计\",\"json\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"connection\":\"收支合计\",\"cells\":[{\"id\":14008,\"name\":\"\",\"title\":\"\",\"data\":\"收支合计\",\"param\":\"-\",\"type\":5,\"percent\":100,\"style\":{\"align\":2,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"connection\":\"收支合计\",\"cells\":[{\"id\":14008,\"name\":\"\",\"title\":\"收支汇总：\",\"data\":\"{totalFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14008,\"name\":\"\",\"title\":\"交接差额：\",\"data\":\"{payTotalChangeFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"connection\":\"收支合计\",\"cells\":[{\"id\":14008,\"name\":\"\",\"title\":\"支付笔数：\",\"data\":\"{payTotalCount}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14008,\"name\":\"\",\"title\":\"退款笔数：\",\"data\":\"{returnCount}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"connection\":\"收支合计\",\"cells\":[{\"id\":\"\",\"name\":\"\",\"title\":\"\",\"data\":\"\",\"param\":\"-\",\"type\":5,\"percent\":100,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}}]}]}",
+          "sort": 8,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "14009",
+          "moduleId": 14,
+          "label": "收支详情",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "",
+          "type": 2,
+          "placeholder": "{handoverSubmitDetails}",
+          "componentProperty": "{\"visible\":\"{handoverSubmitDetails}0\",\"rowType\":2,\"connection\":\"handoverSubmitDetails\",\"json\":[{\"type\":2,\"data\":\"{handoverSubmitDetails}\",\"visible\":\"{handoverSubmitDetails}0\",\"connection\":\"handoverSubmitDetails\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{payModeName}\",\"param\":\"-\",\"type\":5,\"percent\":100,\"style\":{\"align\":2,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"交易金额：\",\"data\":\"{handoverFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"差额：\",\"data\":\"{diffFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"交易笔数：\",\"data\":\"{payCount}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"退款笔数：\",\"data\":\"{refundCount}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":2,\"data\":\"{handoverDevices}\",\"visible\":\"{handoverDevices}0\",\"childRows\":[{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{deviceName}\",\"param\":\"-\",\"type\":5,\"percent\":100,\"style\":{\"align\":2,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"销售收款\",\"data\":\"\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{saleFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"营销活动\",\"data\":\"\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{marketingFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"预付金收款\",\"data\":\"\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{bookingFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]},{\"type\":1,\"data\":\"\",\"visible\":\"\",\"cells\":[{\"id\":14009,\"name\":\"\",\"title\":\"收支收银\",\"data\":\"\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":1,\"fontSize\":1,\"fontWeight\":1}},{\"id\":14009,\"name\":\"\",\"title\":\"\",\"data\":\"{accountSubjectFee}\",\"param\":\"\",\"type\":1,\"percent\":50,\"style\":{\"align\":3,\"fontSize\":1,\"fontWeight\":1}}]}]}]}]}",
+          "sort": 10,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "底栏信息",
+      "describe": "",
+      "sort": 4,
+      "componentList": [
+        {
+          "id": "13001",
+          "moduleId": 13,
+          "label": "操作员：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{actor}",
+          "componentProperty": "",
+          "sort": 1,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13002",
+          "moduleId": 13,
+          "label": "收银员：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{userName}",
+          "componentProperty": "{\"visible\":\"{userName}0\"}",
+          "sort": 2,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13003",
+          "moduleId": 13,
+          "label": "服务员：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{waiter}",
+          "componentProperty": "{\"visible\":\"{waiter}0\"}",
+          "sort": 3,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13004",
+          "moduleId": 13,
+          "label": "开单时间：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{tableCreateTime}",
+          "componentProperty": "",
+          "sort": 4,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13005",
+          "moduleId": 13,
+          "label": "打印时间：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"3\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{printTime}",
+          "componentProperty": "",
+          "sort": 5,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13006",
+          "moduleId": 13,
+          "label": "商户地址：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{shopAddress}",
+          "componentProperty": "{\"visible\":\"{shopAddress}0\"}",
+          "sort": 6,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13007",
+          "moduleId": 13,
+          "label": "商户电话：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{shopPhone}",
+          "componentProperty": "{\"visible\":\"{shopPhone}0\"}",
+          "sort": 7,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        },
+        {
+          "id": "13008",
+          "moduleId": 13,
+          "label": "商户信息：",
+          "value": "",
+          "labelStyle": "",
+          "valueStyle": "{\"fontSize\":\"1\",\"align\":\"2\",\"fontWeight\": \"1\"}",
+          "type": 1,
+          "placeholder": "{shopInfo}",
+          "componentProperty": "{\"visible\":\"{shopInfo}0\"}",
+          "sort": 8,
+          "row": 1,
+          "column": 1,
+          "width": 100
+        }
+      ]
+    }
+  ],
+  "baseTemplateContent": "测试模板1的内容",
+  "content": {
+    "rows": [
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "1020",
+            "name": "",
+            "title": "{ticketState}{ticketName}",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 2,
+              "fontSize": 4,
+              "fontWeight": 1
+            },
+            "visible": "{ticketName}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610678284182",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "14001",
+            "name": "",
+            "title": "设备编号：",
+            "data": "{deviceNumber}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": "1",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "14005",
+            "name": "",
+            "title": "交接开始时间：",
+            "data": "{startTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": "1",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "14006",
+            "name": "",
+            "title": "交接结束时间：",
+            "data": "{endTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": "1",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": null,
+        "cells": [
+          {
+            "id": "separator_1610878819844",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "14007",
+            "name": "",
+            "title": "备用金",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 70,
+            "noDragOut": true,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          },
+          {
+            "id": "14007",
+            "name": "",
+            "title": "",
+            "data": "{reserveFee}",
+            "param": "",
+            "type": 1,
+            "percent": 30,
+            "noDragOut": true,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610678332219",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{handoverSubmitDetails}",
+        "visible": "{handoverSubmitDetails}0",
+        "connection": "handoverSubmitDetails",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 14009,
+                "name": "",
+                "title": "",
+                "data": "{payModeName}",
+                "param": "-",
+                "type": 5,
+                "percent": 100,
+                "style": {
+                  "align": 2,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 14009,
+                "name": "",
+                "title": "交易金额：",
+                "data": "{handoverFee}",
+                "param": "",
+                "type": 1,
+                "percent": 50,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 14009,
+                "name": "",
+                "title": "差额：",
+                "data": "{diffFee}",
+                "param": "",
+                "type": 1,
+                "percent": 50,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 14009,
+                "name": "",
+                "title": "交易笔数：",
+                "data": "{payCount}",
+                "param": "",
+                "type": 1,
+                "percent": 50,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 14009,
+                "name": "",
+                "title": "退款笔数：",
+                "data": "{refundCount}",
+                "param": "",
+                "type": 1,
+                "percent": 50,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{handoverDevices}",
+            "visible": "{handoverDevices}0",
+            "childRows": [
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "",
+                    "data": "{deviceName}",
+                    "param": "-",
+                    "type": 5,
+                    "percent": 100,
+                    "style": {
+                      "align": 2,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "销售收款",
+                    "data": "",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "",
+                    "data": "{saleFee}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "营销活动",
+                    "data": "",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "",
+                    "data": "{marketingFee}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "预付金收款",
+                    "data": "",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "",
+                    "data": "{bookingFee}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "收支收银",
+                    "data": "",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 14009,
+                    "name": "",
+                    "title": "",
+                    "data": "{accountSubjectFee}",
+                    "param": "",
+                    "type": 1,
+                    "percent": 50,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "connection": "handoverSubmitDetails",
+        "cells": [
+          {
+            "id": "separator_1610678346315",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "7006",
+            "name": "",
+            "title": "签字区",
+            "data": "",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "separator_1610678354280",
+            "name": "",
+            "title": "",
+            "dat": "",
+            "param": "-",
+            "type": 5,
+            "percent": 100,
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "14004",
+            "name": "",
+            "title": "交接人:",
+            "data": "{operatorName}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": "{operatorName}0"
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "13004",
+            "name": "",
+            "title": "开单时间：",
+            "data": "{tableCreateTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": "3",
+              "fontSize": "1",
+              "fontWeight": "1"
+            },
+            "visible": null
+          }
+        ]
+      },
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": "13005",
+            "name": "",
+            "title": "打印时间：",
+            "data": "{printTime}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "style": {
+              "align": 3,
+              "fontSize": 1,
+              "fontWeight": 1
+            },
+            "visible": null
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -20,6 +20,8 @@ export default function Row({
   onUpload,
   onCancelUpload,
   onDoubleClick,
+  onCellDragBtnClick,
+  activeCellIndex,
 }) {
   const ref = useRef();
   const ref_cell_box_flex = useRef();
@@ -51,6 +53,7 @@ export default function Row({
         ? data.cells.map((item, number) => {
           const { type: newType, id, param, style } = item;
           const type = Number(newType);
+          // console.log('type-==========' + item.data, type, item);
           let CellItem;
           // 组件类型
           if (type === 2 || type === 3 || type === 4) {
@@ -83,15 +86,15 @@ export default function Row({
           if (type === 1) {
             newData = (item.name || newTitle) + newData;
           }
-          // console.log('temp===' + item.title, newParam);
+
           // 从componentsData中获取对应cell的相关数据：buttonLabel, readOnly
           let buttonLabel = '';
           let readOnly = 'false';
           if (type === 2 || type === 4) {
             allComponentList.forEach(el => {
               if (el.id == id && el.componentProperty) {
-                const newComponentProperty = el.componentProperty;
-                // const newComponentProperty = JSON.parse(el.componentProperty);
+                const newComponentProperty = JSON.parse(el.componentProperty);
+                // console.log('buttonlabel937===' + item.title, newComponentProperty);
                 buttonLabel = newComponentProperty.buttonLabel
                   ? newComponentProperty.buttonLabel
                   : null;
@@ -124,17 +127,27 @@ export default function Row({
               newParam = flagParam ? newParam : renderDatas.demoObject[paramTemp];
             }
           }
-          // cell是否可见 0:data存在时可见；目前默认只有0
-          let newVisible = item.visible ? item.visible.substring(item.visible.length - 1) : true;
-          if (newVisible === '0') {
-            newVisible = item.data ? true : false;
+          // cell是否可见；目前默认只有0
+          let newVisible = item.visible;
+          if (newVisible && newVisible.replace(regStr, '')) {
+            // 为0时的规则：data存在时可见
+            if (item.visible.substring(item.visible.length - 1) === '0') {
+              const temp = item.visible.substring(0, item.visible.length - 1);
+              if (demoObjectTemp[temp.replace(regStr, '')] || ((type === 2 || type == 3 || type == 4) && !newData)) {
+                newVisible = true;
+              } else {
+                newVisible = false;
+              }
+            }
+          } else { // visible不存在 || 占位符不存在 默认展示
+            newVisible = true;
           }
-
+          // console.log('visible===='+item.visible, newVisible);
           // 调整宽度按钮
           const axis = number < data.cells.length ? 'x' : 'none';
           // 是否可拖拽
           const canDrag = isEdit && data.cells.length > 1 && type === 1;
-
+          // console.log('temp===937' + item.title, newData, newVisible);
           return (
             <Cell
               key={`${data.row_id}-${item.id}-${number}`}
@@ -152,6 +165,8 @@ export default function Row({
               brother={data.cells.length}
               moveCell={moveCell}
               blockIndex={blockIndex}
+              onCellDragBtnClick={onCellDragBtnClick}
+              activeCellIndex={activeCellIndex}
             >
               {
                 newVisible &&

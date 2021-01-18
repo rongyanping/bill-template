@@ -1,327 +1,593 @@
-{
-  "dishList": [
-    {
-      "type": 2,
-      "data": "{middleCategories}",
-      "connection": "middleCategories",
-      "visible": "",
-      "childRows": [
-        {
-          "type": 1,
-          "data": "",
-          "visible": "",
-          "cells": [
-            {
-              "id": 1,
-              "name": "",
-              "title": "",
-              "data": "{middleCategoryName}",
-              "param": "",
-              "type": 1,
-              "percent": 100,
-              "cellAlias": "item_middle_category_name",
-              "style": {
-                "align": 1,
-                "fontSize": 4,
-                "fontWeight": 1
-              }
+[
+  {
+    "type": 2,
+    "data": "{middleCategories}",
+    "connection": "middleCategories",
+    "visible": "",
+    "childRows": [
+      {
+        "type": 1,
+        "data": "",
+        "visible": "",
+        "cells": [
+          {
+            "id": 2001,
+            "name": "",
+            "title": "",
+            "data": "{middleCategoryName}",
+            "param": "",
+            "type": 1,
+            "percent": 100,
+            "cellAlias": "item_middle_category_name",
+            "style": {
+              "align": 1,
+              "fontSize": 1,
+              "fontWeight": 1
             }
-          ]
-        },
-        {
-          "type": 2,
-          "data": "{middleCategoryDishes}",
-          "visible": "",
-          "childRows": [
-            {
-              "type": 1,
-              "data": "",
-              "visible": "",
-              "cells": [
-                {
-                  "id": 1,
-                  "name": "",
-                  "title": "",
-                  "data": "{dishName}",
-                  "cellAlias": "item_name",
-                  "param": "",
-                  "type": 1,
-                  "percent": 70,
-                  "style": {
-                    "align": 1,
-                    "fontSize": 4,
-                    "fontWeight": 1
-                  }
-                },
-                {
-                  "id": 1,
-                  "name": "",
-                  "title": "",
-                  "data": "X{dishQuantity}",
-                  "cellAlias": "item_quantity",
-                  "param": "",
-                  "type": 1,
-                  "percent": 30,
-                  "style": {
-                    "align": 3,
-                    "fontSize": 4,
-                    "fontWeight": 1
-                  }
-                }
-              ]
-            },
-            {
-              "type": 2,
-              "data": "{dishCategoryBeanList}",
-              "visible": "",
-              "childRows": [
-                {
-                  "type": 2,
-                  "data": "{middleCategoryDishes}",
-                  "visible": "",
-                  "childRows": [
-                    {
-                      "type": 1,
-                      "data": "",
-                      "visible": "",
-                      "cells": [
-                        {
-                          "id": 1,
-                          "name": "",
-                          "title": "",
-                          "data": "  -{dishName}",
-                          "cellAlias": "item_name",
-                          "param": "",
-                          "type": 1,
-                          "percent": 70,
-                          "style": {
-                            "align": 1,
-                            "fontSize": 4,
-                            "fontWeight": 1
-                          }
-                        },
-                        {
-                          "id": 1,
-                          "name": "",
-                          "title": "",
-                          "data": "X{dishQuantity}",
-                          "cellAlias": "item_quantity",
-                          "param": "",
-                          "type": 1,
-                          "percent": 30,
-                          "style": {
-                            "align": 3,
-                            "fontSize": 4,
-                            "fontWeight": 1
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": 2,
-                      "data": "{dishExtraList}",
-                      "visible": "",
-                      "childRows": [
-                        {
-                          "type": 1,
-                          "data": "",
-                          "visible": "",
-                          "cells": [
-                            {
-                              "id": 1,
-                              "name": "",
-                              "title": "",
-                              "data": "  -加料:{dishNameAndPriceName}",
-                              "cellAlias": "item_name",
-                              "param": "",
-                              "type": 1,
-                              "percent": 70,
-                              "style": {
-                                "align": 1,
-                                "fontSize": 4,
-                                "fontWeight": 1
-                              }
-                            },
-                            {
-                              "id": 1,
-                              "name": "",
-                              "title": "",
-                              "data": "X{dishNameAndPriceQuantity}",
-                              "cellAlias": "item_quantity",
-                              "param": "",
-                              "type": 1,
-                              "percent": 30,
-                              "style": {
-                                "align": 3,
-                                "fontSize": 4,
-                                "fontWeight": 1
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": 2,
-                      "data": "{dishPracticeList}",
-                      "visible": "",
-                      "childRows": [
-                        {
-                          "type": 1,
-                          "data": "",
-                          "visible": "",
-                          "cells": [
-                            {
-                              "id": 1,
-                              "name": "",
-                              "title": "",
-                              "data": "  -做法:{dishNameAndPriceName}",
-                              "cellAlias": "item_name",
-                              "param": "",
-                              "type": 1,
-                              "percent": 70,
-                              "style": {
-                                "align": 1,
-                                "fontSize": 4,
-                                "fontWeight": 1
-                              }
-                            },
-                            {
-                              "id": 1,
-                              "name": "",
-                              "title": "",
-                              "data": "X{dishNameAndPriceQuantity}",
-                              "cellAlias": "item_quantity",
-                              "param": "",
-                              "type": 1,
-                              "percent": 30,
-                              "style": {
-                                "align": 3,
-                                "fontSize": 4,
-                                "fontWeight": 1
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": 2,
-              "data": "{dishExtraList}",
-              "visible": "",
-              "childRows": [
-                {
-                  "type": 1,
-                  "data": "",
-                  "visible": "",
-                  "cells": [
-                    {
-                      "id": 1,
-                      "name": "",
-                      "title": "",
-                      "data": "  -加料:{dishNameAndPriceName}",
-                      "cellAlias": "item_name",
-                      "param": "",
-                      "type": 1,
-                      "percent": 70,
-                      "style": {
-                        "align": 1,
-                        "fontSize": 4,
-                        "fontWeight": 1
-                      }
-                    },
-                    {
-                      "id": 1,
-                      "name": "",
-                      "title": "",
-                      "data": "X{dishNameAndPriceQuantity}",
-                      "cellAlias": "item_quantity",
-                      "param": "",
-                      "type": 1,
-                      "percent": 30,
-                      "style": {
-                        "align": 3,
-                        "fontSize": 4,
-                        "fontWeight": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": 2,
-              "data": "{dishPracticeList}",
-              "visible": "",
-              "childRows": [
-                {
-                  "type": 1,
-                  "data": "",
-                  "visible": "",
-                  "cells": [
-                    {
-                      "id": 1,
-                      "name": "",
-                      "title": "",
-                      "data": "  -做法:{dishNameAndPriceName}",
-                      "cellAlias": "item_name",
-                      "param": "",
-                      "type": 1,
-                      "percent": 70,
-                      "style": {
-                        "align": 1,
-                        "fontSize": 4,
-                        "fontWeight": 1
-                      }
-                    },
-                    {
-                      "id": 1,
-                      "name": "",
-                      "title": "",
-                      "data": "X{dishNameAndPriceQuantity}",
-                      "cellAlias": "item_quantity",
-                      "param": "",
-                      "type": 1,
-                      "percent": 30,
-                      "style": {
-                        "align": 3,
-                        "fontSize": 4,
-                        "fontWeight": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "data": "",
-      "connection": "middleCategories",
-      "visible": "",
-      "cells": [
-        {
-          "id": 1,
-          "name": "",
-          "title": "",
-          "data": "",
-          "param": "-",
-          "type": 5,
-          "percent": 100,
-          "style": {
-            "align": 1,
-            "fontSize": 1,
-            "fontWeight": 1
           }
+        ]
+      },
+      {
+        "type": 2,
+        "data": "{middleCategoryDishes}",
+        "visible": "",
+        "childRows": [
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 2003,
+                "name": "",
+                "title": "",
+                "data": "{dishName}",
+                "cellAlias": "item_name",
+                "param": "",
+                "type": 1,
+                "percent": 40,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 2006,
+                "name": "",
+                "title": "",
+                "data": "{dishPrice}",
+                "cellAlias": "item_price",
+                "param": "",
+                "type": 1,
+                "percent": 20,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 2007,
+                "name": "",
+                "title": "",
+                "data": "X{dishQuantity}",
+                "cellAlias": "item_quantity",
+                "param": "",
+                "type": 1,
+                "percent": 20,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              },
+              {
+                "id": 2008,
+                "name": "",
+                "title": "",
+                "data": "{dishTotalPrice}",
+                "cellAlias": "item_total_price",
+                "param": "",
+                "type": 1,
+                "percent": 20,
+                "style": {
+                  "align": 3,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 2004,
+                "name": "",
+                "title": "",
+                "data": "{dishNameSecondLanguage}",
+                "cellAlias": "item_second_language",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{dishCategoryBeanList}",
+            "visible": "",
+            "childRows": [
+              {
+                "type": 2,
+                "data": "{middleCategoryDishes}",
+                "visible": "",
+                "childRows": [
+                  {
+                    "type": 1,
+                    "data": "",
+                    "visible": "",
+                    "cells": [
+                      {
+                        "id": 2003,
+                        "name": "",
+                        "title": "",
+                        "data": " -{dishName}",
+                        "cellAlias": "item_name",
+                        "param": "",
+                        "type": 1,
+                        "percent": 40,
+                        "style": {
+                          "align": 1,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      },
+                      {
+                        "id": 2006,
+                        "name": "",
+                        "title": "",
+                        "data": "{dishPrice}",
+                        "cellAlias": "item_price",
+                        "param": "",
+                        "type": 1,
+                        "percent": 20,
+                        "style": {
+                          "align": 3,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      },
+                      {
+                        "id": 2007,
+                        "name": "",
+                        "title": "",
+                        "data": "X{dishQuantity}",
+                        "cellAlias": "item_quantity",
+                        "param": "",
+                        "type": 1,
+                        "percent": 20,
+                        "style": {
+                          "align": 3,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      },
+                      {
+                        "id": 2008,
+                        "name": "",
+                        "title": "",
+                        "data": "{dishTotalPrice}",
+                        "cellAlias": "item_total_price",
+                        "param": "",
+                        "type": 1,
+                        "percent": 20,
+                        "style": {
+                          "align": 3,
+                          "fontSize": 1,
+                          "fontWeight": 1
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": 2,
+                    "data": "{dishExtraList}",
+                    "visible": "",
+                    "childRows": [
+                      {
+                        "type": 1,
+                        "data": "",
+                        "visible": "",
+                        "cells": [
+                          {
+                            "id": 2003,
+                            "name": "",
+                            "title": "",
+                            "data": " -加料:{dishNameAndPriceName}",
+                            "cellAlias": "item_name",
+                            "param": "",
+                            "type": 1,
+                            "percent": 40,
+                            "style": {
+                              "align": 1,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2006,
+                            "name": "",
+                            "title": "",
+                            "data": "{dishNameAndPricePrice}",
+                            "cellAlias": "item_price",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2007,
+                            "name": "",
+                            "title": "",
+                            "data": "X{dishNameAndPriceQuantity}",
+                            "cellAlias": "item_quantity",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2008,
+                            "name": "",
+                            "title": "",
+                            "data": "{dishNameAndPriceAmount}",
+                            "cellAlias": "item_total_price",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": 2,
+                    "data": "{dishPracticeList}",
+                    "visible": "",
+                    "childRows": [
+                      {
+                        "type": 1,
+                        "data": "",
+                        "visible": "",
+                        "cells": [
+                          {
+                            "id": 2003,
+                            "name": "",
+                            "title": "",
+                            "data": " -做法:{dishNameAndPriceName}",
+                            "cellAlias": "item_name",
+                            "param": "",
+                            "type": 1,
+                            "percent": 40,
+                            "style": {
+                              "align": 1,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2006,
+                            "name": "",
+                            "title": "",
+                            "data": "{dishNameAndPricePrice}",
+                            "cellAlias": "item_price",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2007,
+                            "name": "",
+                            "title": "",
+                            "data": "X{dishNameAndPriceQuantity}",
+                            "cellAlias": "item_quantity",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          },
+                          {
+                            "id": 2008,
+                            "name": "",
+                            "title": "",
+                            "data": "{dishNameAndPriceAmount}",
+                            "cellAlias": "item_total_price",
+                            "param": "",
+                            "type": 1,
+                            "percent": 20,
+                            "style": {
+                              "align": 3,
+                              "fontSize": 1,
+                              "fontWeight": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{dishExtraList}",
+            "visible": "",
+            "childRows": [
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 2003,
+                    "name": "",
+                    "title": "",
+                    "data": " -加料:{dishNameAndPriceName}",
+                    "cellAlias": "item_name",
+                    "param": "",
+                    "type": 1,
+                    "percent": 40,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2006,
+                    "name": "",
+                    "title": "",
+                    "data": "{dishNameAndPricePrice}",
+                    "cellAlias": "item_price",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2007,
+                    "name": "",
+                    "title": "",
+                    "data": "X{dishNameAndPriceQuantity}",
+                    "cellAlias": "item_quantity",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2008,
+                    "name": "",
+                    "title": "",
+                    "data": "{dishNameAndPriceAmount}",
+                    "cellAlias": "item_total_price",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 2,
+            "data": "{dishPracticeList}",
+            "visible": "",
+            "childRows": [
+              {
+                "type": 1,
+                "data": "",
+                "visible": "",
+                "cells": [
+                  {
+                    "id": 2003,
+                    "name": "",
+                    "title": "",
+                    "data": " -做法:{dishNameAndPriceName}",
+                    "cellAlias": "item_name",
+                    "param": "",
+                    "type": 1,
+                    "percent": 40,
+                    "style": {
+                      "align": 1,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2006,
+                    "name": "",
+                    "title": "",
+                    "data": "{dishNameAndPricePrice}",
+                    "cellAlias": "item_price",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2007,
+                    "name": "",
+                    "title": "",
+                    "data": "X{dishNameAndPriceQuantity}",
+                    "cellAlias": "item_quantity",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  },
+                  {
+                    "id": 2008,
+                    "name": "",
+                    "title": "",
+                    "data": "{dishNameAndPriceAmount}",
+                    "cellAlias": "item_total_price",
+                    "param": "",
+                    "type": 1,
+                    "percent": 20,
+                    "style": {
+                      "align": 3,
+                      "fontSize": 1,
+                      "fontWeight": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 2012,
+                "name": "",
+                "title": "菜品关联桌数:",
+                "data": "{dishTableCount}",
+                "cellAlias": "item_dish_table-count",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 2013,
+                "name": "",
+                "title": "座位号:",
+                "data": "{dishSeat}",
+                "cellAlias": "item_dish_seat",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "data": "",
+            "visible": "",
+            "cells": [
+              {
+                "id": 2009,
+                "name": "",
+                "title": "",
+                "data": "{dishMemo}",
+                "cellAlias": "item_dish_memo",
+                "param": "",
+                "type": 1,
+                "percent": 100,
+                "style": {
+                  "align": 1,
+                  "fontSize": 1,
+                  "fontWeight": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "data": "",
+    "connection": "middleCategories",
+    "visible": "",
+    "cells": [
+      {
+        "id": "",
+        "name": "",
+        "title": "",
+        "data": "",
+        "param": "-",
+        "type": 5,
+        "percent": 100,
+        "style": {
+          "align": 1,
+          "fontSize": 1,
+          "fontWeight": 1
         }
-      ]
-    }
-  ]
-}
+      }
+    ]
+  }
+]
